@@ -30,14 +30,6 @@ learnable_noise: false
 use_amp: true
 amp_dtype: bf16
 use_checkpoint: true
-max_pe_edges: 0
+max_pe_edges: 200000
 pe_loss_mode: random
 pe_weight_mode: none
-pe_sampler: full
-pe_budget_ratio: 0.0
-ia_beta_spec: 0.7
-ia_beta_degree: 0.3
-ia_temperature: 1.0
-ia_stochastic: 0
-ia_bins: 10
-ia_max_freqs_for_score: 50

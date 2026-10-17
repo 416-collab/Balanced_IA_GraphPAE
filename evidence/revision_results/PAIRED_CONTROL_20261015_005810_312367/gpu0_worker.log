@@ -1,0 +1,9 @@
+START: cora_random_0.10
+FINISH: cora_random_0.10 return_code= 0
+START: cora_random_0.25
+FINISH: cora_random_0.25 return_code= 0
+START: chameleon_random_0.10
+FINISH: chameleon_random_0.10 return_code= 0
+START: chameleon_random_0.25
+FINISH: chameleon_random_0.25 return_code= 0
+WORKER COMPLETE

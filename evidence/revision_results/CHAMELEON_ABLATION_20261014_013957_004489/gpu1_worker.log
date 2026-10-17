@@ -1,0 +1,5 @@
+START: bins_spectral
+FINISH: bins_spectral, return_code=0
+START: bins_degree
+FINISH: bins_degree, return_code=0
+WORKER COMPLETE

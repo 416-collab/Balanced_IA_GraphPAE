@@ -1,0 +1,11 @@
+Dataset: cornell
+Runs: 10
+Best seed index: 2
+Best single-run ACC: 0.78378379
+Best single-run percentage: 78.38%
+Original mean ± std ACC: 0.61622000 ± 0.07528900
+Original mean ± std percentage: 61.62 ± 7.53%
+All ACC values:
+[0.5675675868988037, 0.5405405759811401, 0.7837837934494019, 0.5675675868988037, 0.6486486792564392, 0.6756756901741028, 0.5405405759811401, 0.6486486792564392, 0.5405405759811401, 0.6486486792564392]
+Original log file:
+/home/insuper/GraphPAE_Project/results_server/FINAL_ALL_DATASETS/logs/cornell_fixed_best_numexp10.txt

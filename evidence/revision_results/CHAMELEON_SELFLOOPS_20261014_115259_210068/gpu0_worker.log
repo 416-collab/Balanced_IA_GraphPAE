@@ -1,0 +1,5 @@
+START: random, self_loops=keep
+FINISH: random, self_loops=keep, return_code=0
+START: random, self_loops=drop
+FINISH: random, self_loops=drop, return_code=0
+WORKER COMPLETE

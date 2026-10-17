@@ -1,0 +1,16 @@
+Namespace(num_exp=5, root='./dataset', dataset='citeseer', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=2, embed_dim=512, heads=4, gnn_dropout=0.0, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=True, use_amp=False, amp_dtype='bf16', use_checkpoint=False, pe_sampler='random', pe_budget_ratio=0.25, max_pe_edges=0, ia_beta_spec=0.7, ia_beta_degree=0.3, ia_temperature=1.0, ia_stochastic=0, ia_max_freqs_for_score=50, ia_bins=10)
+Auto feat_dim: 3703
+0 5
+[IA-Budget] sampler=random, nonself=2276/9104 (25.00%), self_loops=3327, total_active_edges=5603
+[PE-select] using all 2276/5603 non-self PE edges
+Epoch 1000, ACC: 0.7040000557899475
+[PE-select] using all 2276/5603 non-self PE edges
+Epoch 1000, ACC: 0.7000000476837158
+[PE-select] using all 2276/5603 non-self PE edges
+Epoch 1000, ACC: 0.7150000333786011
+[PE-select] using all 2276/5603 non-self PE edges
+Epoch 1000, ACC: 0.7100000381469727
+[PE-select] using all 2276/5603 non-self PE edges
+Epoch 1000, ACC: 0.7120000123977661
+[0.7040000557899475, 0.7000000476837158, 0.7150000333786011, 0.7100000381469727, 0.7120000123977661]
+final result: 0.70820±0.0054553

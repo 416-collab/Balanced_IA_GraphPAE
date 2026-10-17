@@ -1,0 +1,5 @@
+Separate paired-edge robustness experiment.
+Budget ratio applies to unique undirected candidate pairs.
+Each selected pair contributes both encoder directions.
+Original directed-selection runs are preserved.
+Graph degree scoring and other training settings are unchanged.

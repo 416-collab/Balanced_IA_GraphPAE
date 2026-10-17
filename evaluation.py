@@ -24,7 +24,7 @@ def node_evaluation(emb, y, train_idx, valid_idx, test_idx, epochs=200, lr=1e-2,
 
     loss_fn = nn.CrossEntropyLoss()
 
-    best_val_acc = 0
+    best_val_acc = float("-inf")
     eval_acc = 0
     pred = None
 
@@ -59,10 +59,9 @@ def node_evaluation(emb, y, train_idx, valid_idx, test_idx, epochs=200, lr=1e-2,
             test_preds = torch.argmax(test_logits, dim=1)
             test_acc = torch.sum(test_preds == y[test_idx]).float() / test_idx.size(0)
 
-            if val_acc >= best_val_acc:
-                best_val_acc = val_acc
-                if test_acc > eval_acc:
-                    eval_acc = test_acc
-                    pred = test_preds
+            if float(val_acc) > best_val_acc:
+                best_val_acc = float(val_acc)
+                eval_acc = test_acc
+                pred = test_preds
 
     return eval_acc, pred

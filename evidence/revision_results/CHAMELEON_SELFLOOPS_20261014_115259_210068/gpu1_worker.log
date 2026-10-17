@@ -1,0 +1,5 @@
+START: ia, self_loops=keep
+FINISH: ia, self_loops=keep, return_code=0
+START: ia, self_loops=drop
+FINISH: ia, self_loops=drop, return_code=0
+WORKER COMPLETE

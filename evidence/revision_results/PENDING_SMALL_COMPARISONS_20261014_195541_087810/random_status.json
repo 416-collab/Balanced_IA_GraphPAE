@@ -1,0 +1,26 @@
+[
+  {
+    "experiment": "actor_random_budget0.10",
+    "return_code": 0
+  },
+  {
+    "experiment": "actor_random_budget0.25",
+    "return_code": 0
+  },
+  {
+    "experiment": "squirrel_random_budget0.10",
+    "return_code": 0
+  },
+  {
+    "experiment": "squirrel_random_budget0.25",
+    "return_code": 0
+  },
+  {
+    "experiment": "citeseer_random_budget0.10",
+    "return_code": 0
+  },
+  {
+    "experiment": "citeseer_random_budget0.25",
+    "return_code": 0
+  }
+]

@@ -1,0 +1,7 @@
+START: bins_random
+FINISH: bins_random, return_code=0
+START: ia_no_bins
+FINISH: ia_no_bins, return_code=0
+START: ia_raw_degree
+FINISH: ia_raw_degree, return_code=0
+WORKER COMPLETE

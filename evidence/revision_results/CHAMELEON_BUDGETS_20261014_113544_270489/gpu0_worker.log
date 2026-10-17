@@ -1,0 +1,7 @@
+START: random, budget=0.05
+FINISH: random, budget=0.05, return_code=0
+START: random, budget=0.25
+FINISH: random, budget=0.25, return_code=0
+START: random, budget=0.5
+FINISH: random, budget=0.5, return_code=0
+WORKER COMPLETE

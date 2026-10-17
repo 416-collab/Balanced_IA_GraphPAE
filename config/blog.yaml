@@ -30,12 +30,3 @@ learnable_noise: false
 use_amp: false
 amp_dtype: bf16
 use_checkpoint: false
-pe_sampler: full
-pe_budget_ratio: 0.0
-max_pe_edges: 0
-ia_beta_spec: 0.7
-ia_beta_degree: 0.3
-ia_temperature: 1.0
-ia_stochastic: 0
-ia_bins: 10
-ia_max_freqs_for_score: 50

@@ -1,0 +1,11 @@
+Dataset: arxiv-year-official
+Runs: 5
+Best seed index: 2
+Best single-run ACC: 0.41235799
+Best single-run percentage: 41.24%
+Original mean ± std ACC: 0.41001000 ± 0.00141690
+Original mean ± std percentage: 41.00 ± 0.14%
+All ACC values:
+[0.40973615646362305, 0.4091220498085022, 0.41235798597335815, 0.40820086002349854, 0.41063371300697327]
+Original log file:
+/home/insuper/GraphPAE_Project/results_server/FINAL_ALL_DATASETS/logs/arxiv-year-official_official_final_3L256H2_numexp5.txt

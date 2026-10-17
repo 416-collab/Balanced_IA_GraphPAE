@@ -1,0 +1,32 @@
+arXiv-year Final Results
+
+Official CUAI split:
+Raw feature baseline: 0.37296 ± 0.00192
+GraphPAE memory-safe result: 0.40569 ± 0.00173
+
+Percentage:
+Raw feature baseline: 37.30 ± 0.19%
+GraphPAE memory-safe result: 40.57 ± 0.17%
+
+Custom split:
+GraphPAE memory-safe result: 0.40749 ± 0.00216
+Percentage: 40.75 ± 0.22%
+
+Configuration:
+Dataset: arXiv-year
+Feature dimension: 128
+enc_gnn_layer: 2
+embed_dim: 160
+heads: 1
+max_freqs: 100
+max_pe_edges: 500000
+masked_pe_loss: 0.05
+mask_ratio: 0.5
+gnn_dropout: 0.3
+gnn_edge_dropout: 0.5
+use_amp: true
+amp_dtype: bf16
+use_checkpoint: true
+
+Note:
+This is a memory-safe GraphPAE configuration for a 24GB GPU. The original paper used a larger node-classification setting, including higher hidden dimensions and more attention heads. Therefore, the result is lower than the original paper but improves clearly over the raw feature baseline.

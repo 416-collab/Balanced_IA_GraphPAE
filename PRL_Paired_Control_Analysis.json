@@ -1,0 +1,58 @@
+{
+  "batch": "/home/insuper/GraphPAE_Project/PRL_Revision_20261014_004139_949694/revision_results/PAIRED_CONTROL_20261015_005810_312367",
+  "comparisons": [
+    {
+      "dataset": "cora",
+      "budget": 0.1,
+      "random_mean_percent": 81.080002784729,
+      "random_sd_percent": 0.655439912548566,
+      "ia_mean_percent": 79.32000398635864,
+      "ia_sd_percent": 1.4034243225425946,
+      "ia_minus_random_pp": -1.7599987983703613,
+      "paired_p_unadjusted": 0.06119173931845522,
+      "random_training_peak_gib": 0.41174840927124023,
+      "ia_training_peak_gib": 0.41174840927124023,
+      "paired_p_holm_four_controls": 0.18357521795536566
+    },
+    {
+      "dataset": "cora",
+      "budget": 0.25,
+      "random_mean_percent": 82.50000596046448,
+      "random_sd_percent": 0.49396299379648195,
+      "ia_mean_percent": 79.56000328063965,
+      "ia_sd_percent": 0.7605272830606334,
+      "ia_minus_random_pp": -2.940002679824829,
+      "paired_p_unadjusted": 0.0029430953757461123,
+      "random_training_peak_gib": 0.4719209671020508,
+      "ia_training_peak_gib": 0.4719209671020508,
+      "paired_p_holm_four_controls": 0.01177238150298445
+    },
+    {
+      "dataset": "chameleon",
+      "budget": 0.1,
+      "random_mean_percent": 64.64912176132202,
+      "random_sd_percent": 1.9683157115094374,
+      "ia_mean_percent": 68.24561476707458,
+      "ia_sd_percent": 2.0637359168969907,
+      "ia_minus_random_pp": 3.5964930057525635,
+      "paired_p_unadjusted": 0.09242712149179019,
+      "random_training_peak_gib": 0.6055254936218262,
+      "ia_training_peak_gib": 0.6055254936218262,
+      "paired_p_holm_four_controls": 0.18485424298358039
+    },
+    {
+      "dataset": "chameleon",
+      "budget": 0.25,
+      "random_mean_percent": 66.27192974090576,
+      "random_sd_percent": 1.2358772934409508,
+      "ia_mean_percent": 67.8947377204895,
+      "ia_sd_percent": 3.0119793247737126,
+      "ia_minus_random_pp": 1.6228079795837402,
+      "paired_p_unadjusted": 0.20740993638933247,
+      "random_training_peak_gib": 0.9465737342834473,
+      "ia_training_peak_gib": 0.9465737342834473,
+      "paired_p_holm_four_controls": 0.20740993638933247
+    }
+  ],
+  "note": "Five paired seeds. Holm correction covers these four controls only. Other experimental comparisons are not included in this correction. Paired controls remain separate from original directed-selection runs."
+}

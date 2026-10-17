@@ -1,0 +1,25 @@
+Namespace(num_exp=10, root='./dataset', dataset='actor', device=device(type='cuda', index=0), feat_dim=932, epochs=1000, optim='adam', init_lr=0.0005, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=2, embed_dim=1024, heads=4, gnn_dropout=0.0, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=True, use_amp=False, amp_dtype='bf16', use_checkpoint=False)
+Auto feat_dim: 932
+0 4
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.3013158142566681
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.28421053290367126
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.3098684251308441
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.29539474844932556
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.2881579101085663
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.31118422746658325
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.28486841917037964
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.28486841917037964
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.31315791606903076
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.3078947365283966
+[0.3013158142566681, 0.28421053290367126, 0.3098684251308441, 0.29539474844932556, 0.2881579101085663, 0.31118422746658325, 0.28486841917037964, 0.28486841917037964, 0.31315791606903076, 0.3078947365283966]
+final result: 0.29809±0.011366

@@ -1,0 +1,11 @@
+Dataset: texas
+Runs: 10
+Best seed index: 1
+Best single-run ACC: 0.86486489
+Best single-run percentage: 86.49%
+Original mean ± std ACC: 0.77297000 ± 0.05565200
+Original mean ± std percentage: 77.30 ± 5.57%
+All ACC values:
+[0.8378378748893738, 0.8648648858070374, 0.6756756901741028, 0.7837837934494019, 0.7837837934494019, 0.7837837934494019, 0.7297297716140747, 0.8108108043670654, 0.7567567825317383, 0.7027027010917664]
+Original log file:
+/home/insuper/GraphPAE_Project/results_server/FINAL_ALL_DATASETS/logs/texas_fixed_best_numexp10.txt

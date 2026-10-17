@@ -1,0 +1,25 @@
+Namespace(num_exp=10, root='./dataset', dataset='squirrel', device=device(type='cuda', index=0), feat_dim=2089, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0, epochs_eval=2000, mask_ratio=0.5, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.001, atom_recon_type='sce', alpha_l=1.0, noise_val=0.01, enc_gnn_layer=2, embed_dim=1024, heads=4, gnn_dropout=0.6, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=False, use_amp=False, amp_dtype='bf16', use_checkpoint=False)
+Auto feat_dim: 2089
+0 4
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5619596242904663
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.589817464351654
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5504322648048401
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5763688683509827
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5369836688041687
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5360230207443237
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5465897917747498
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5571565628051758
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5331411957740784
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5369836688041687
+[0.5619596242904663, 0.589817464351654, 0.5504322648048401, 0.5763688683509827, 0.5369836688041687, 0.5360230207443237, 0.5465897917747498, 0.5571565628051758, 0.5331411957740784, 0.5369836688041687]
+final result: 0.55255±0.018001

@@ -1,0 +1,25 @@
+Namespace(num_exp=10, root='./dataset', dataset='chameleon', device=device(type='cuda', index=0), feat_dim=2325, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=3, embed_dim=1024, heads=4, gnn_dropout=0.0, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=True, use_amp=False, amp_dtype='bf16', use_checkpoint=False)
+Auto feat_dim: 2325
+0 4
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.6644737124443054
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.7302631735801697
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.7083333134651184
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.6644737124443054
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.6688596606254578
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.7214912176132202
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.6644737124443054
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.6798245906829834
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.6798245906829834
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.6644737124443054
+[0.6644737124443054, 0.7302631735801697, 0.7083333134651184, 0.6644737124443054, 0.6688596606254578, 0.7214912176132202, 0.6644737124443054, 0.6798245906829834, 0.6798245906829834, 0.6644737124443054]
+final result: 0.68465±0.024337

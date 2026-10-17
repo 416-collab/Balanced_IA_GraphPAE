@@ -1,0 +1,77 @@
+Namespace(num_exp=5, root='./dataset', dataset='actor', sampler='random', budget=0.1, self_loops='keep', device=device(type='cuda', index=0), feat_dim=932, epochs=1000, optim='adam', init_lr=0.0005, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=3, embed_dim=1024, heads=4, gnn_dropout=0.0, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=True, use_amp=False, amp_dtype='bf16', use_checkpoint=False, pe_sampler='random', pe_budget_ratio=0.1, max_pe_edges=0, ia_beta_spec=0.7, ia_beta_degree=0.3, ia_temperature=1.0, ia_stochastic=0, ia_max_freqs_for_score=50, ia_bins=10, pe_keep_self_loops=True, pe_loss_mode='all', pe_weight_mode='none')
+Auto feat_dim: 932
+RUN DIRECTORY: /home/insuper/GraphPAE_Project/PRL_Revision_20261014_004139_949694/revision_results/PENDING_SMALL_COMPARISONS_20261014_195541_087810/revision_results/actor_random_20261014_195544_710902
+0 4
+[IA-Budget] sampler=random, nonself=5331/53318 (10.00%), self_loops=7600, total_active_edges=12931
+[PE-select] using all 5331/12931 non-self PE edges
+seed=0 epoch=1 loss=0.963555
+seed=0 epoch=100 loss=0.396288
+seed=0 epoch=200 loss=0.388706
+seed=0 epoch=300 loss=0.403278
+seed=0 epoch=400 loss=0.397276
+seed=0 epoch=500 loss=0.403647
+seed=0 epoch=600 loss=0.399584
+seed=0 epoch=700 loss=0.389360
+seed=0 epoch=800 loss=0.389902
+seed=0 epoch=900 loss=0.395249
+seed=0 epoch=1000 loss=0.398744
+PRETRAIN METRICS: seconds= 33.2047886364162 peak_allocated_GiB= 1.0295615196228027
+Epoch 1000, ACC: 0.30263158679008484
+[PE-select] using all 5331/12931 non-self PE edges
+seed=1 epoch=1 loss=1.026320
+seed=1 epoch=100 loss=0.400824
+seed=1 epoch=200 loss=0.392237
+seed=1 epoch=300 loss=0.394097
+seed=1 epoch=400 loss=0.404336
+seed=1 epoch=500 loss=0.390735
+seed=1 epoch=600 loss=0.398033
+seed=1 epoch=700 loss=0.399229
+seed=1 epoch=800 loss=0.394238
+seed=1 epoch=900 loss=0.397074
+seed=1 epoch=1000 loss=0.406311
+PRETRAIN METRICS: seconds= 40.14025009050965 peak_allocated_GiB= 1.03043794631958
+Epoch 1000, ACC: 0.3414473831653595
+[PE-select] using all 5331/12931 non-self PE edges
+seed=2 epoch=1 loss=0.976170
+seed=2 epoch=100 loss=0.391429
+seed=2 epoch=200 loss=0.397757
+seed=2 epoch=300 loss=0.395748
+seed=2 epoch=400 loss=0.400434
+seed=2 epoch=500 loss=0.392895
+seed=2 epoch=600 loss=0.398278
+seed=2 epoch=700 loss=0.392663
+seed=2 epoch=800 loss=0.388389
+seed=2 epoch=900 loss=0.396120
+seed=2 epoch=1000 loss=0.393089
+PRETRAIN METRICS: seconds= 41.1078621391207 peak_allocated_GiB= 1.03043794631958
+Epoch 1000, ACC: 0.2697368562221527
+[PE-select] using all 5331/12931 non-self PE edges
+seed=3 epoch=1 loss=1.018562
+seed=3 epoch=100 loss=0.397698
+seed=3 epoch=200 loss=0.395335
+seed=3 epoch=300 loss=0.389802
+seed=3 epoch=400 loss=0.390707
+seed=3 epoch=500 loss=0.395694
+seed=3 epoch=600 loss=0.399811
+seed=3 epoch=700 loss=0.393616
+seed=3 epoch=800 loss=0.394548
+seed=3 epoch=900 loss=0.392078
+seed=3 epoch=1000 loss=0.391778
+PRETRAIN METRICS: seconds= 40.75894572585821 peak_allocated_GiB= 1.03043794631958
+Epoch 1000, ACC: 0.33355265855789185
+[PE-select] using all 5331/12931 non-self PE edges
+seed=4 epoch=1 loss=1.012276
+seed=4 epoch=100 loss=0.388879
+seed=4 epoch=200 loss=0.391044
+seed=4 epoch=300 loss=0.389074
+seed=4 epoch=400 loss=0.401503
+seed=4 epoch=500 loss=0.398064
+seed=4 epoch=600 loss=0.401353
+seed=4 epoch=700 loss=0.393131
+seed=4 epoch=800 loss=0.391375
+seed=4 epoch=900 loss=0.400720
+seed=4 epoch=1000 loss=0.401370
+PRETRAIN METRICS: seconds= 40.321842942386866 peak_allocated_GiB= 1.03043794631958
+Epoch 1000, ACC: 0.2697368562221527
+[0.30263158679008484, 0.3414473831653595, 0.2697368562221527, 0.33355265855789185, 0.2697368562221527]
+final result: 0.30342±0.03041

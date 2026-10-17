@@ -1,0 +1,16 @@
+Namespace(num_exp=5, root='./dataset', dataset='chameleon', device=device(type='cuda', index=0), feat_dim=2325, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=3, embed_dim=1024, heads=4, gnn_dropout=0.0, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=True, use_amp=False, amp_dtype='bf16', use_checkpoint=False, pe_sampler='spectral', pe_budget_ratio=0.1, max_pe_edges=0, ia_beta_spec=0.7, ia_beta_degree=0.3, ia_temperature=1.0, ia_stochastic=0, ia_max_freqs_for_score=50, ia_bins=10)
+Auto feat_dim: 2325
+0 4
+[IA-Budget] sampler=spectral, nonself=6274/62742 (10.00%), self_loops=2277, total_active_edges=8551
+[PE-select] using all 6274/8551 non-self PE edges
+Epoch 1000, ACC: 0.6644737124443054
+[PE-select] using all 6274/8551 non-self PE edges
+Epoch 1000, ACC: 0.7368420958518982
+[PE-select] using all 6274/8551 non-self PE edges
+Epoch 1000, ACC: 0.6600877046585083
+[PE-select] using all 6274/8551 non-self PE edges
+Epoch 1000, ACC: 0.6710526347160339
+[PE-select] using all 6274/8551 non-self PE edges
+Epoch 1000, ACC: 0.6359649300575256
+[0.6644737124443054, 0.7368420958518982, 0.6600877046585083, 0.6710526347160339, 0.6359649300575256]
+final result: 0.67368±0.033729

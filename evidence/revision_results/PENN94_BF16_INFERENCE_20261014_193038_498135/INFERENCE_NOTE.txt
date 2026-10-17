@@ -1,0 +1,3 @@
+Full-graph embedding uses CUDA BF16 autocast.
+Embeddings are converted to FP32 for linear evaluation.
+Training settings are unchanged from the full-feature batch.

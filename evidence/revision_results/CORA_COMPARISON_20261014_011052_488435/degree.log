@@ -1,0 +1,72 @@
+Namespace(num_exp=5, root='./dataset', dataset='cora', sampler='degree', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=3, embed_dim=1024, heads=4, gnn_dropout=0.0, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=False, use_amp=False, amp_dtype='bf16', use_checkpoint=False, pe_sampler='degree', pe_budget_ratio=0.1, max_pe_edges=0, ia_beta_spec=0.7, ia_beta_degree=0.3, ia_temperature=1.0, ia_stochastic=0, ia_max_freqs_for_score=50, ia_bins=10, pe_loss_mode='all', pe_weight_mode='none')
+Auto feat_dim: 1433
+RUN DIRECTORY: /home/insuper/GraphPAE_Project/PRL_Revision_20261014_004139_949694/revision_results/cora_degree_20261014_011055_921846
+0 6
+[IA-Budget] sampler=degree, nonself=1055/10556 (9.99%), self_loops=2708, total_active_edges=3763
+[PE-select] using all 1055/3763 non-self PE edges
+seed=0 epoch=1 loss=1.026658
+seed=0 epoch=100 loss=0.580070
+seed=0 epoch=200 loss=0.576377
+seed=0 epoch=300 loss=0.572041
+seed=0 epoch=400 loss=0.570888
+seed=0 epoch=500 loss=0.573421
+seed=0 epoch=600 loss=0.575941
+seed=0 epoch=700 loss=0.581329
+seed=0 epoch=800 loss=0.565103
+seed=0 epoch=900 loss=0.569845
+seed=0 epoch=1000 loss=0.577363
+Epoch 1000, ACC: 0.7620000243186951
+[PE-select] using all 1055/3763 non-self PE edges
+seed=1 epoch=1 loss=0.989523
+seed=1 epoch=100 loss=0.574782
+seed=1 epoch=200 loss=0.571696
+seed=1 epoch=300 loss=0.565463
+seed=1 epoch=400 loss=0.582720
+seed=1 epoch=500 loss=0.568530
+seed=1 epoch=600 loss=0.567801
+seed=1 epoch=700 loss=0.567747
+seed=1 epoch=800 loss=0.574261
+seed=1 epoch=900 loss=0.571770
+seed=1 epoch=1000 loss=0.575033
+Epoch 1000, ACC: 0.7590000629425049
+[PE-select] using all 1055/3763 non-self PE edges
+seed=2 epoch=1 loss=1.022456
+seed=2 epoch=100 loss=0.577643
+seed=2 epoch=200 loss=0.577281
+seed=2 epoch=300 loss=0.569413
+seed=2 epoch=400 loss=0.572560
+seed=2 epoch=500 loss=0.566510
+seed=2 epoch=600 loss=0.564815
+seed=2 epoch=700 loss=0.559692
+seed=2 epoch=800 loss=0.571881
+seed=2 epoch=900 loss=0.559267
+seed=2 epoch=1000 loss=0.573706
+Epoch 1000, ACC: 0.7700000405311584
+[PE-select] using all 1055/3763 non-self PE edges
+seed=3 epoch=1 loss=1.006150
+seed=3 epoch=100 loss=0.579837
+seed=3 epoch=200 loss=0.574112
+seed=3 epoch=300 loss=0.562506
+seed=3 epoch=400 loss=0.566345
+seed=3 epoch=500 loss=0.568908
+seed=3 epoch=600 loss=0.567619
+seed=3 epoch=700 loss=0.571384
+seed=3 epoch=800 loss=0.568340
+seed=3 epoch=900 loss=0.572992
+seed=3 epoch=1000 loss=0.564292
+Epoch 1000, ACC: 0.7380000352859497
+[PE-select] using all 1055/3763 non-self PE edges
+seed=4 epoch=1 loss=1.008501
+seed=4 epoch=100 loss=0.573209
+seed=4 epoch=200 loss=0.572971
+seed=4 epoch=300 loss=0.574250
+seed=4 epoch=400 loss=0.566465
+seed=4 epoch=500 loss=0.567941
+seed=4 epoch=600 loss=0.568432
+seed=4 epoch=700 loss=0.568387
+seed=4 epoch=800 loss=0.570281
+seed=4 epoch=900 loss=0.566308
+seed=4 epoch=1000 loss=0.564931
+Epoch 1000, ACC: 0.7680000066757202
+[0.7620000243186951, 0.7590000629425049, 0.7700000405311584, 0.7380000352859497, 0.7680000066757202]
+final result: 0.75940±0.011412

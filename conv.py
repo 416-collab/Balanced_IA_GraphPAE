@@ -39,7 +39,9 @@ class GATConv(MessagePassing):
         self.heads = heads
         self.concat = concat
         self.negative_slope = negative_slope
-        self.add_self_loops = add_self_loops
+        self.add_self_loops = (
+            add_self_loops and bool(getattr(args, "pe_keep_self_loops", True))
+        )
         self.edge_dim = edge_dim
         self.fill_value = fill_value
         self.residual = residual

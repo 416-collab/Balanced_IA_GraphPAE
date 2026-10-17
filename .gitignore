@@ -1,0 +1,9 @@
+dataset/
+datasets/
+checkpoints/
+__pycache__/
+*.pt
+*.pth
+*.ckpt
+*.zip
+.env

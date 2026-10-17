@@ -1,64 +1,54 @@
-import re
-from pathlib import Path
+import re, os
 
-ROOT = Path(__file__).resolve().parent
-RESULTS = ROOT / "results"
-OUT = RESULTS / "FINAL_RESULTS_SUMMARY.md"
+RESULTS_DIR = os.path.expanduser("~/GraphPAE_Project/results_server/FINAL_PAPER_RUN")
+OUT_FILE = os.path.join(RESULTS_DIR, "FINAL_SUMMARY_TABLE.md")
+PATTERN = re.compile(r"final result:\s*([\d.]+)\s*±\s*([\d.]+)")
 
-pattern = re.compile(r"final result:\s*([0-9.]+)\s*±\s*([0-9.]+)")
+DATASET_ORDER = ["blog", "chameleon", "squirrel", "actor", "texas", "cornell", "wisconsin", "cora", "citeseer"]
+DISPLAY_NAME = {
+    "blog": "BlogCatalog", "chameleon": "Chameleon", "squirrel": "Squirrel", "actor": "Actor",
+    "texas": "Texas", "cornell": "Cornell", "wisconsin": "Wisconsin", "cora": "Cora", "citeseer": "CiteSeer",
+}
 
-def parse_dir(folder, keyword):
-    rows = {}
-    for fp in sorted(folder.glob("*.txt")):
-        txt = fp.read_text(errors="ignore")
-        matches = pattern.findall(txt)
-        if not matches:
-            continue
-        mean, std = matches[-1]
-        name = fp.name
+def parse_file(filepath):
+    with open(filepath, "r") as f:
+        content = f.read()
+    matches = PATTERN.findall(content)
+    if not matches:
+        return None
+    mean, std = matches[-1]
+    return float(mean) * 100, float(std) * 100
 
-        dataset = name.split("_")[0]
-        ratio = None
-        if "ratio0.25" in name:
-            ratio = "0.25"
-        elif "ratio0.10" in name:
-            ratio = "0.10"
+rows = []
+for name in DATASET_ORDER:
+    filepath = os.path.join(RESULTS_DIR, f"{name}_final_10seed.txt")
+    if not os.path.exists(filepath):
+        rows.append((name, None, None, "FILE NOT FOUND"))
+        continue
+    result = parse_file(filepath)
+    if result is None:
+        rows.append((name, None, None, "NO RESULT LINE FOUND"))
+    else:
+        mean, std = result
+        rows.append((name, mean, std, "OK"))
 
-        if dataset and ratio:
-            rows[(dataset, ratio)] = (float(mean) * 100, float(std) * 100, fp.name)
-    return rows
+with open(OUT_FILE, "w") as f:
+    f.write("# Final Results - Pre-Paper Run\n\n")
+    f.write("| Dataset | Final Result (%) | Status |\n")
+    f.write("|---|---:|---|\n")
+    for name, mean, std, status in rows:
+        display = DISPLAY_NAME.get(name, name)
+        if mean is not None:
+            f.write(f"| {display} | {mean:.2f} +/- {std:.2f} | {status} |\n")
+        else:
+            f.write(f"| {display} | - | {status} |\n")
 
-random_rows = parse_dir(RESULTS / "random_budget_5seed", "random")
-ia_rows = parse_dir(RESULTS / "balanced_ia_budget_5seed", "ia")
+print("\n=== FINAL SUMMARY TABLE ===")
+for name, mean, std, status in rows:
+    display = DISPLAY_NAME.get(name, name)
+    if mean is not None:
+        print(f"{display:12s} {mean:6.2f} +/- {std:5.2f}   [{status}]")
+    else:
+        print(f"{display:12s}  ---   ---   [{status}]")
 
-datasets = ["actor", "chameleon", "citeseer", "cora", "squirrel"]
-ratios = ["0.10", "0.25"]
-
-lines = []
-lines.append("# Final Budgeted GraphPAE Results\n")
-lines.append("| Dataset | Budget | Random (%) | Balanced IA (%) | Gain |\n")
-lines.append("|---|---:|---:|---:|---:|\n")
-
-print("\n=== FINAL RANDOM VS BALANCED IA RESULTS ===")
-for d in datasets:
-    for r in ratios:
-        rv = random_rows.get((d, r))
-        iv = ia_rows.get((d, r))
-
-        if rv is None or iv is None:
-            lines.append(f"| {d} | {r} | - | - | - |\n")
-            print(f"{d:10s} ratio={r} missing result")
-            continue
-
-        rmean, rstd, _ = rv
-        imean, istd, _ = iv
-        gain = imean - rmean
-
-        lines.append(
-            f"| {d} | {r} | {rmean:.2f} ± {rstd:.2f} | {imean:.2f} ± {istd:.2f} | {gain:+.2f} |\n"
-        )
-        print(f"{d:10s} ratio={r} random={rmean:.2f}±{rstd:.2f} IA={imean:.2f}±{istd:.2f} gain={gain:+.2f}")
-
-RESULTS.mkdir(exist_ok=True)
-OUT.write_text("".join(lines))
-print("\nSaved:", OUT)
+print(f"\nSaved to: {OUT_FILE}")

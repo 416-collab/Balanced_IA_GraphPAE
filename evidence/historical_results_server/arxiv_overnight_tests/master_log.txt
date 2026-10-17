@@ -1,0 +1,336 @@
+============================================================
+START TEST: arxiv_night_repeat_best_96d_100f_500k_pe005_drop03_edge05
+layer=1 dim=96 heads=1 freq=100 pe_edges=500000 pe_loss=0.05 gdrop=0.3 edrop=0.5
+============================================================
+device: 0
+feat_dim: 1
+epochs: 1000
+optim: adam
+init_lr: 0.001
+weight_decay: 0.0
+use_schedule: true
+step_size: 50
+gamma: 0.5
+lr_eval: 0.01
+wd_eval: 0.0001
+epochs_eval: 2000
+mask_ratio: 0.5
+replace_ratio: 0.0
+masked_atom_loss: 1.0
+masked_pe_loss: 0.05
+atom_recon_type: sce
+alpha_l: 2.0
+noise_val: 0.01
+enc_gnn_layer: 1
+embed_dim: 96
+heads: 1
+gnn_dropout: 0.3
+gnn_edge_dropout: 0.5
+gnn_activation: elu
+task_head_activation: gelu
+max_freqs: 100
+max_pe_edges: 500000
+pos_activation: gelu
+
+Namespace(num_exp=1, root='./dataset', dataset='arxiv-year', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.5, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.05, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=1, embed_dim=96, heads=1, gnn_dropout=0.3, gnn_edge_dropout=0.5, gnn_activation='elu', task_head_activation='gelu', max_freqs=100, max_pe_edges=500000, pos_activation='gelu')
+Auto feat_dim: 128
+0 4
+[PE-loss-fix] sampled 500000/2484941 PE-loss edges
+Epoch 1000, ACC: 0.3973120450973511
+[0.3973120450973511]
+final result: 0.39731±0.0
+FINISHED TEST: arxiv_night_repeat_best_96d_100f_500k_pe005_drop03_edge05
+
+============================================================
+START TEST: arxiv_night_96d_100f_1M_pe005_drop03_edge05
+layer=1 dim=96 heads=1 freq=100 pe_edges=1000000 pe_loss=0.05 gdrop=0.3 edrop=0.5
+============================================================
+device: 0
+feat_dim: 1
+epochs: 1000
+optim: adam
+init_lr: 0.001
+weight_decay: 0.0
+use_schedule: true
+step_size: 50
+gamma: 0.5
+lr_eval: 0.01
+wd_eval: 0.0001
+epochs_eval: 2000
+mask_ratio: 0.5
+replace_ratio: 0.0
+masked_atom_loss: 1.0
+masked_pe_loss: 0.05
+atom_recon_type: sce
+alpha_l: 2.0
+noise_val: 0.01
+enc_gnn_layer: 1
+embed_dim: 96
+heads: 1
+gnn_dropout: 0.3
+gnn_edge_dropout: 0.5
+gnn_activation: elu
+task_head_activation: gelu
+max_freqs: 100
+max_pe_edges: 1000000
+pos_activation: gelu
+
+Namespace(num_exp=1, root='./dataset', dataset='arxiv-year', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.5, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.05, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=1, embed_dim=96, heads=1, gnn_dropout=0.3, gnn_edge_dropout=0.5, gnn_activation='elu', task_head_activation='gelu', max_freqs=100, max_pe_edges=1000000, pos_activation='gelu')
+Auto feat_dim: 128
+0 4
+[PE-loss-fix] sampled 1000000/2484941 PE-loss edges
+Epoch 1000, ACC: 0.397571861743927
+[0.397571861743927]
+final result: 0.39757±0.0
+FINISHED TEST: arxiv_night_96d_100f_1M_pe005_drop03_edge05
+
+============================================================
+START TEST: arxiv_night_128d_100f_500k_pe005_drop03_edge05
+layer=1 dim=128 heads=1 freq=100 pe_edges=500000 pe_loss=0.05 gdrop=0.3 edrop=0.5
+============================================================
+device: 0
+feat_dim: 1
+epochs: 1000
+optim: adam
+init_lr: 0.001
+weight_decay: 0.0
+use_schedule: true
+step_size: 50
+gamma: 0.5
+lr_eval: 0.01
+wd_eval: 0.0001
+epochs_eval: 2000
+mask_ratio: 0.5
+replace_ratio: 0.0
+masked_atom_loss: 1.0
+masked_pe_loss: 0.05
+atom_recon_type: sce
+alpha_l: 2.0
+noise_val: 0.01
+enc_gnn_layer: 1
+embed_dim: 128
+heads: 1
+gnn_dropout: 0.3
+gnn_edge_dropout: 0.5
+gnn_activation: elu
+task_head_activation: gelu
+max_freqs: 100
+max_pe_edges: 500000
+pos_activation: gelu
+
+Namespace(num_exp=1, root='./dataset', dataset='arxiv-year', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.5, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.05, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=1, embed_dim=128, heads=1, gnn_dropout=0.3, gnn_edge_dropout=0.5, gnn_activation='elu', task_head_activation='gelu', max_freqs=100, max_pe_edges=500000, pos_activation='gelu')
+Auto feat_dim: 128
+0 4
+[PE-loss-fix] sampled 500000/2484941 PE-loss edges
+Epoch 1000, ACC: 0.3963436186313629
+[0.3963436186313629]
+final result: 0.39634±0.0
+FINISHED TEST: arxiv_night_128d_100f_500k_pe005_drop03_edge05
+
+============================================================
+START TEST: arxiv_night_128d_100f_1M_pe005_drop03_edge05
+layer=1 dim=128 heads=1 freq=100 pe_edges=1000000 pe_loss=0.05 gdrop=0.3 edrop=0.5
+============================================================
+device: 0
+feat_dim: 1
+epochs: 1000
+optim: adam
+init_lr: 0.001
+weight_decay: 0.0
+use_schedule: true
+step_size: 50
+gamma: 0.5
+lr_eval: 0.01
+wd_eval: 0.0001
+epochs_eval: 2000
+mask_ratio: 0.5
+replace_ratio: 0.0
+masked_atom_loss: 1.0
+masked_pe_loss: 0.05
+atom_recon_type: sce
+alpha_l: 2.0
+noise_val: 0.01
+enc_gnn_layer: 1
+embed_dim: 128
+heads: 1
+gnn_dropout: 0.3
+gnn_edge_dropout: 0.5
+gnn_activation: elu
+task_head_activation: gelu
+max_freqs: 100
+max_pe_edges: 1000000
+pos_activation: gelu
+
+Namespace(num_exp=1, root='./dataset', dataset='arxiv-year', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.5, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.05, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=1, embed_dim=128, heads=1, gnn_dropout=0.3, gnn_edge_dropout=0.5, gnn_activation='elu', task_head_activation='gelu', max_freqs=100, max_pe_edges=1000000, pos_activation='gelu')
+Auto feat_dim: 128
+0 4
+[PE-loss-fix] sampled 1000000/2484941 PE-loss edges
+Epoch 1000, ACC: 0.396272748708725
+[0.396272748708725]
+final result: 0.39627±0.0
+FINISHED TEST: arxiv_night_128d_100f_1M_pe005_drop03_edge05
+
+============================================================
+START TEST: arxiv_night_96d_100f_500k_pe010_drop03_edge05
+layer=1 dim=96 heads=1 freq=100 pe_edges=500000 pe_loss=0.10 gdrop=0.3 edrop=0.5
+============================================================
+device: 0
+feat_dim: 1
+epochs: 1000
+optim: adam
+init_lr: 0.001
+weight_decay: 0.0
+use_schedule: true
+step_size: 50
+gamma: 0.5
+lr_eval: 0.01
+wd_eval: 0.0001
+epochs_eval: 2000
+mask_ratio: 0.5
+replace_ratio: 0.0
+masked_atom_loss: 1.0
+masked_pe_loss: 0.1
+atom_recon_type: sce
+alpha_l: 2.0
+noise_val: 0.01
+enc_gnn_layer: 1
+embed_dim: 96
+heads: 1
+gnn_dropout: 0.3
+gnn_edge_dropout: 0.5
+gnn_activation: elu
+task_head_activation: gelu
+max_freqs: 100
+max_pe_edges: 500000
+pos_activation: gelu
+
+Namespace(num_exp=1, root='./dataset', dataset='arxiv-year', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.5, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.1, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=1, embed_dim=96, heads=1, gnn_dropout=0.3, gnn_edge_dropout=0.5, gnn_activation='elu', task_head_activation='gelu', max_freqs=100, max_pe_edges=500000, pos_activation='gelu')
+Auto feat_dim: 128
+0 4
+[PE-loss-fix] sampled 500000/2484941 PE-loss edges
+Epoch 1000, ACC: 0.39511537551879883
+[0.39511537551879883]
+final result: 0.39512±0.0
+FINISHED TEST: arxiv_night_96d_100f_500k_pe010_drop03_edge05
+
+============================================================
+START TEST: arxiv_night_2layer_96d_100f_500k_pe005_drop03_edge05
+layer=2 dim=96 heads=1 freq=100 pe_edges=500000 pe_loss=0.05 gdrop=0.3 edrop=0.5
+============================================================
+device: 0
+feat_dim: 1
+epochs: 1000
+optim: adam
+init_lr: 0.001
+weight_decay: 0.0
+use_schedule: true
+step_size: 50
+gamma: 0.5
+lr_eval: 0.01
+wd_eval: 0.0001
+epochs_eval: 2000
+mask_ratio: 0.5
+replace_ratio: 0.0
+masked_atom_loss: 1.0
+masked_pe_loss: 0.05
+atom_recon_type: sce
+alpha_l: 2.0
+noise_val: 0.01
+enc_gnn_layer: 2
+embed_dim: 96
+heads: 1
+gnn_dropout: 0.3
+gnn_edge_dropout: 0.5
+gnn_activation: elu
+task_head_activation: gelu
+max_freqs: 100
+max_pe_edges: 500000
+pos_activation: gelu
+
+Namespace(num_exp=1, root='./dataset', dataset='arxiv-year', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.5, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.05, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=2, embed_dim=96, heads=1, gnn_dropout=0.3, gnn_edge_dropout=0.5, gnn_activation='elu', task_head_activation='gelu', max_freqs=100, max_pe_edges=500000, pos_activation='gelu')
+Auto feat_dim: 128
+0 4
+[PE-loss-fix] sampled 500000/2484941 PE-loss edges
+Epoch 1000, ACC: 0.4091692864894867
+[0.4091692864894867]
+final result: 0.40917±0.0
+FINISHED TEST: arxiv_night_2layer_96d_100f_500k_pe005_drop03_edge05
+
+============================================================
+START TEST: arxiv_night_64d_2heads_100f_500k_pe005_drop03_edge05
+layer=1 dim=64 heads=2 freq=100 pe_edges=500000 pe_loss=0.05 gdrop=0.3 edrop=0.5
+============================================================
+device: 0
+feat_dim: 1
+epochs: 1000
+optim: adam
+init_lr: 0.001
+weight_decay: 0.0
+use_schedule: true
+step_size: 50
+gamma: 0.5
+lr_eval: 0.01
+wd_eval: 0.0001
+epochs_eval: 2000
+mask_ratio: 0.5
+replace_ratio: 0.0
+masked_atom_loss: 1.0
+masked_pe_loss: 0.05
+atom_recon_type: sce
+alpha_l: 2.0
+noise_val: 0.01
+enc_gnn_layer: 1
+embed_dim: 64
+heads: 2
+gnn_dropout: 0.3
+gnn_edge_dropout: 0.5
+gnn_activation: elu
+task_head_activation: gelu
+max_freqs: 100
+max_pe_edges: 500000
+pos_activation: gelu
+
+Namespace(num_exp=1, root='./dataset', dataset='arxiv-year', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.5, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.05, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=1, embed_dim=64, heads=2, gnn_dropout=0.3, gnn_edge_dropout=0.5, gnn_activation='elu', task_head_activation='gelu', max_freqs=100, max_pe_edges=500000, pos_activation='gelu')
+Auto feat_dim: 128
+0 4
+Traceback (most recent call last):
+  File "/home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/train_node.py", line 115, in <module>
+    train_mae_epoch(
+  File "/home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/train_node.py", line 19, in train_mae_epoch
+    loss = graph_auto_encoder(x, edge_index, u, PE, edge_index_pe)
+  File "/home/insuper/miniconda3/envs/graphpae/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/insuper/miniconda3/envs/graphpae/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/autoencoder.py", line 85, in forward
+    enc_rep = self.node_pred(enc_rep, mask_tokens)
+  File "/home/insuper/miniconda3/envs/graphpae/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/insuper/miniconda3/envs/graphpae/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/autoencoder.py", line 51, in forward
+    x = self.dense(features)
+  File "/home/insuper/miniconda3/envs/graphpae/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/insuper/miniconda3/envs/graphpae/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/insuper/miniconda3/envs/graphpae/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (84671x128 and 64x64)
+FINISHED TEST: arxiv_night_64d_2heads_100f_500k_pe005_drop03_edge05
+
+============================================================
+OVERNIGHT SUMMARY
+============================================================
+/home/insuper/GraphPAE_Project/results_server/arxiv_overnight_tests/arxiv_night_128d_100f_1M_pe005_drop03_edge05.txt:final result: 0.39627±0.0
+/home/insuper/GraphPAE_Project/results_server/arxiv_overnight_tests/arxiv_night_128d_100f_500k_pe005_drop03_edge05.txt:final result: 0.39634±0.0
+/home/insuper/GraphPAE_Project/results_server/arxiv_overnight_tests/arxiv_night_2layer_96d_100f_500k_pe005_drop03_edge05.txt:final result: 0.40917±0.0
+/home/insuper/GraphPAE_Project/results_server/arxiv_overnight_tests/arxiv_night_96d_100f_1M_pe005_drop03_edge05.txt:final result: 0.39757±0.0
+/home/insuper/GraphPAE_Project/results_server/arxiv_overnight_tests/arxiv_night_96d_100f_500k_pe010_drop03_edge05.txt:final result: 0.39512±0.0
+/home/insuper/GraphPAE_Project/results_server/arxiv_overnight_tests/arxiv_night_repeat_best_96d_100f_500k_pe005_drop03_edge05.txt:final result: 0.39731±0.0
+/home/insuper/GraphPAE_Project/results_server/arxiv_overnight_tests/master_log.txt:final result: 0.39731±0.0
+/home/insuper/GraphPAE_Project/results_server/arxiv_overnight_tests/master_log.txt:final result: 0.39757±0.0
+/home/insuper/GraphPAE_Project/results_server/arxiv_overnight_tests/master_log.txt:final result: 0.39634±0.0
+/home/insuper/GraphPAE_Project/results_server/arxiv_overnight_tests/master_log.txt:final result: 0.39627±0.0
+/home/insuper/GraphPAE_Project/results_server/arxiv_overnight_tests/master_log.txt:final result: 0.39512±0.0
+/home/insuper/GraphPAE_Project/results_server/arxiv_overnight_tests/master_log.txt:final result: 0.40917±0.0

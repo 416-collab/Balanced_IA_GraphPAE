@@ -18,7 +18,7 @@ def _all_self_loops(num_nodes, device):
     return torch.stack([nodes, nodes], dim=0)
 
 
-def _balanced_select_by_spectral_bins(spectral, degree_score, budget, bins):
+def _balanced_select_by_spectral_bins(spectral, degree_score, budget, bins, beta_spec=0.6, beta_degree=0.4):
     """
     Balanced IA selection:
     1. Sort edges by spectral distance.
@@ -32,7 +32,14 @@ def _balanced_select_by_spectral_bins(spectral, degree_score, budget, bins):
     bins = int(max(1, min(bins, budget, M)))
     order = torch.argsort(spectral)
 
-    combined = 0.6 * _minmax(spectral) + 0.4 * _minmax(degree_score)
+    if beta_spec < 0 or beta_degree < 0:
+        raise ValueError("IA weights must be non-negative")
+    if abs(beta_spec + beta_degree - 1.0) > 1e-8:
+        raise ValueError("IA weights must sum to 1")
+    combined = (
+        beta_spec * _minmax(spectral)
+        + beta_degree * _minmax(degree_score)
+    )
 
     selected_parts = []
     selected_mask = torch.zeros(M, dtype=torch.bool, device=device)
@@ -157,7 +164,10 @@ def select_budgeted_pe_edges(edge_index_pe, u, graph_edge_index=None, args=None,
             deg.index_add_(0, ge[0], one)
             deg.index_add_(0, ge[1], one)
 
-        degree_score = torch.log1p(deg[src]) + torch.log1p(deg[dst])
+        if mode == "ia_raw_degree":
+            degree_score = deg[src] + deg[dst]
+        else:
+            degree_score = torch.log1p(deg[src]) + torch.log1p(deg[dst])
         degree_score = _minmax(degree_score)
 
         if mode == "spectral":
@@ -166,20 +176,43 @@ def select_budgeted_pe_edges(edge_index_pe, u, graph_edge_index=None, args=None,
         elif mode == "degree":
             idx = torch.topk(degree_score, k=budget_nonself, largest=True).indices
 
-        elif mode in ["ia", "importance", "balanced", "ia_balanced"]:
+        elif mode in [
+            "ia", "importance", "balanced", "ia_balanced",
+            "bins_random", "ia_no_bins", "ia_raw_degree",
+            "bins_spectral", "bins_degree"
+        ]:
             bins = int(_safe_get(args, "ia_bins", 10) or 10)
-            idx = _balanced_select_by_spectral_bins(
-                spectral=spectral,
-                degree_score=degree_score,
-                budget=budget_nonself,
-                bins=bins,
-            )
+            bs = float(_safe_get(args, "ia_beta_spec", 0.6))
+            bd = float(_safe_get(args, "ia_beta_degree", 0.4))
+
+            if mode == "ia_no_bins":
+                combined = bs * _minmax(spectral) + bd * _minmax(degree_score)
+                idx = torch.topk(combined, k=budget_nonself).indices
+            else:
+                local_degree = degree_score
+                if mode == "bins_random":
+                    local_degree = torch.rand_like(degree_score)
+                    bs, bd = 0.0, 1.0
+                elif mode == "bins_spectral":
+                    bs, bd = 1.0, 0.0
+                elif mode == "bins_degree":
+                    bs, bd = 0.0, 1.0
+                idx = _balanced_select_by_spectral_bins(
+                    spectral=spectral,
+                    degree_score=local_degree,
+                    budget=budget_nonself,
+                    bins=bins,
+                    beta_spec=bs,
+                    beta_degree=bd,
+                )
 
         else:
             idx = torch.randperm(M_nonself, device=dev)[:budget_nonself]
 
     selected_nonself = nonself_edges[:, idx]
     self_edges = _all_self_loops(num_nodes, dev)
+    if not bool(_safe_get(args, "pe_keep_self_loops", True)):
+        self_edges = self_edges[:, :0]
 
     selected = torch.cat([selected_nonself, self_edges], dim=1)
 

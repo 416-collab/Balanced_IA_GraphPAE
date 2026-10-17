@@ -1,0 +1,324 @@
+FINAL RUN START: 2026-05-12T12:17:06
+Output folder: /home/insuper/GraphPAE_Project/results_server/FINAL_ALL_DATASETS
+DATA OK: /home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/dataset/blog.pt
+DATA OK: /home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/dataset/chameleon.pt
+DATA OK: /home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/dataset/squirrel.pt
+DATA OK: /home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/dataset/actor.pt
+DATA OK: /home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/dataset/texas.pt
+DATA OK: /home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/dataset/cornell.pt
+DATA OK: /home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/dataset/wisconsin.pt
+DATA OK: /home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/dataset/cora.pt
+DATA OK: /home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/dataset/citeseer.pt
+DATA OK: /home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/dataset/penn94.pt
+DATA OK: /home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/dataset/arxiv-year-official.pt
+
+====================================================================================================
+[1/11] Running BlogCatalog (blog) | fixed_best | num_exp=10
+====================================================================================================
+Namespace(num_exp=10, root='./dataset', dataset='blog', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.005, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.2, masked_atom_loss=1.0, masked_pe_loss=0.1, atom_recon_type='sce', alpha_l=3.0, noise_val=0.01, enc_gnn_layer=2, embed_dim=1024, heads=4, gnn_dropout=0.6, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=False, use_amp=False, amp_dtype='bf16', use_checkpoint=False)
+Auto feat_dim: 8189
+0 5
+[PE-select] using all 343486/348682 non-self PE edges
+Epoch 1000, ACC: 0.8570000529289246
+[PE-select] using all 343486/348682 non-self PE edges
+Epoch 1000, ACC: 0.8480000495910645
+[PE-select] using all 343486/348682 non-self PE edges
+Epoch 1000, ACC: 0.8540000319480896
+[PE-select] using all 343486/348682 non-self PE edges
+Epoch 1000, ACC: 0.8510000109672546
+[PE-select] using all 343486/348682 non-self PE edges
+Epoch 1000, ACC: 0.878000020980835
+[PE-select] using all 343486/348682 non-self PE edges
+Epoch 1000, ACC: 0.8770000338554382
+[PE-select] using all 343486/348682 non-self PE edges
+Epoch 1000, ACC: 0.8680000305175781
+[PE-select] using all 343486/348682 non-self PE edges
+Epoch 1000, ACC: 0.8730000257492065
+[PE-select] using all 343486/348682 non-self PE edges
+Epoch 1000, ACC: 0.8630000352859497
+[PE-select] using all 343486/348682 non-self PE edges
+Epoch 1000, ACC: 0.8700000643730164
+[0.8570000529289246, 0.8480000495910645, 0.8540000319480896, 0.8510000109672546, 0.878000020980835, 0.8770000338554382, 0.8680000305175781, 0.8730000257492065, 0.8630000352859497, 0.8700000643730164]
+final result: 0.86390±0.010358
+
+====================================================================================================
+[2/11] Running Chameleon (chameleon) | adaptive_best | num_exp=10
+====================================================================================================
+Namespace(num_exp=10, root='./dataset', dataset='chameleon', device=device(type='cuda', index=0), feat_dim=2325, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=3, embed_dim=1024, heads=4, gnn_dropout=0.0, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=True, use_amp=False, amp_dtype='bf16', use_checkpoint=False)
+Auto feat_dim: 2325
+0 4
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.6644737124443054
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.7302631735801697
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.7083333134651184
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.6644737124443054
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.6688596606254578
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.7214912176132202
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.6644737124443054
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.6798245906829834
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.6798245906829834
+[PE-select] using all 62742/65019 non-self PE edges
+Epoch 1000, ACC: 0.6644737124443054
+[0.6644737124443054, 0.7302631735801697, 0.7083333134651184, 0.6644737124443054, 0.6688596606254578, 0.7214912176132202, 0.6644737124443054, 0.6798245906829834, 0.6798245906829834, 0.6644737124443054]
+final result: 0.68465±0.024337
+
+====================================================================================================
+[3/11] Running Squirrel (squirrel) | fixed_best | num_exp=10
+====================================================================================================
+Namespace(num_exp=10, root='./dataset', dataset='squirrel', device=device(type='cuda', index=0), feat_dim=2089, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0, epochs_eval=2000, mask_ratio=0.5, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.001, atom_recon_type='sce', alpha_l=1.0, noise_val=0.01, enc_gnn_layer=2, embed_dim=1024, heads=4, gnn_dropout=0.6, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=False, use_amp=False, amp_dtype='bf16', use_checkpoint=False)
+Auto feat_dim: 2089
+0 4
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5619596242904663
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.589817464351654
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5504322648048401
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5763688683509827
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5369836688041687
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5360230207443237
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5465897917747498
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5571565628051758
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5331411957740784
+[PE-select] using all 396706/401907 non-self PE edges
+Epoch 1000, ACC: 0.5369836688041687
+[0.5619596242904663, 0.589817464351654, 0.5504322648048401, 0.5763688683509827, 0.5369836688041687, 0.5360230207443237, 0.5465897917747498, 0.5571565628051758, 0.5331411957740784, 0.5369836688041687]
+final result: 0.55255±0.018001
+
+====================================================================================================
+[4/11] Running Actor (actor) | adaptive_best | num_exp=10
+====================================================================================================
+Namespace(num_exp=10, root='./dataset', dataset='actor', device=device(type='cuda', index=0), feat_dim=932, epochs=1000, optim='adam', init_lr=0.0005, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=2, embed_dim=1024, heads=4, gnn_dropout=0.0, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=True, use_amp=False, amp_dtype='bf16', use_checkpoint=False)
+Auto feat_dim: 932
+0 4
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.30263158679008484
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.28486841917037964
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.31381580233573914
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.30921053886413574
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.29342105984687805
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.31513160467147827
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.28223684430122375
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.2875000238418579
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.31513160467147827
+[PE-select] using all 53318/60918 non-self PE edges
+Epoch 1000, ACC: 0.3078947365283966
+[0.30263158679008484, 0.28486841917037964, 0.31381580233573914, 0.30921053886413574, 0.29342105984687805, 0.31513160467147827, 0.28223684430122375, 0.2875000238418579, 0.31513160467147827, 0.3078947365283966]
+final result: 0.30118±0.012381
+
+====================================================================================================
+[5/11] Running Texas (texas) | fixed_best | num_exp=10
+====================================================================================================
+Namespace(num_exp=10, root='./dataset', dataset='texas', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=2, embed_dim=512, heads=4, gnn_dropout=0.0, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=False, use_amp=False, amp_dtype='bf16', use_checkpoint=False)
+Auto feat_dim: 1703
+0 4
+[PE-select] using all 558/741 non-self PE edges
+Epoch 1000, ACC: 0.8378378748893738
+[PE-select] using all 558/741 non-self PE edges
+Epoch 1000, ACC: 0.8648648858070374
+[PE-select] using all 558/741 non-self PE edges
+Epoch 1000, ACC: 0.6756756901741028
+[PE-select] using all 558/741 non-self PE edges
+Epoch 1000, ACC: 0.7837837934494019
+[PE-select] using all 558/741 non-self PE edges
+Epoch 1000, ACC: 0.7837837934494019
+[PE-select] using all 558/741 non-self PE edges
+Epoch 1000, ACC: 0.7837837934494019
+[PE-select] using all 558/741 non-self PE edges
+Epoch 1000, ACC: 0.7297297716140747
+[PE-select] using all 558/741 non-self PE edges
+Epoch 1000, ACC: 0.8108108043670654
+[PE-select] using all 558/741 non-self PE edges
+Epoch 1000, ACC: 0.7567567825317383
+[PE-select] using all 558/741 non-self PE edges
+Epoch 1000, ACC: 0.7027027010917664
+[0.8378378748893738, 0.8648648858070374, 0.6756756901741028, 0.7837837934494019, 0.7837837934494019, 0.7837837934494019, 0.7297297716140747, 0.8108108043670654, 0.7567567825317383, 0.7027027010917664]
+final result: 0.77297±0.055652
+
+====================================================================================================
+[6/11] Running Cornell (cornell) | fixed_best | num_exp=10
+====================================================================================================
+Namespace(num_exp=10, root='./dataset', dataset='cornell', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=2, embed_dim=512, heads=4, gnn_dropout=0.0, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=False, use_amp=False, amp_dtype='bf16', use_checkpoint=False)
+Auto feat_dim: 1703
+0 4
+[PE-select] using all 554/737 non-self PE edges
+Epoch 1000, ACC: 0.5675675868988037
+[PE-select] using all 554/737 non-self PE edges
+Epoch 1000, ACC: 0.5405405759811401
+[PE-select] using all 554/737 non-self PE edges
+Epoch 1000, ACC: 0.7837837934494019
+[PE-select] using all 554/737 non-self PE edges
+Epoch 1000, ACC: 0.5675675868988037
+[PE-select] using all 554/737 non-self PE edges
+Epoch 1000, ACC: 0.6486486792564392
+[PE-select] using all 554/737 non-self PE edges
+Epoch 1000, ACC: 0.6756756901741028
+[PE-select] using all 554/737 non-self PE edges
+Epoch 1000, ACC: 0.5405405759811401
+[PE-select] using all 554/737 non-self PE edges
+Epoch 1000, ACC: 0.6486486792564392
+[PE-select] using all 554/737 non-self PE edges
+Epoch 1000, ACC: 0.5405405759811401
+[PE-select] using all 554/737 non-self PE edges
+Epoch 1000, ACC: 0.6486486792564392
+[0.5675675868988037, 0.5405405759811401, 0.7837837934494019, 0.5675675868988037, 0.6486486792564392, 0.6756756901741028, 0.5405405759811401, 0.6486486792564392, 0.5405405759811401, 0.6486486792564392]
+final result: 0.61622±0.075289
+
+====================================================================================================
+[7/11] Running Wisconsin (wisconsin) | fixed_best | num_exp=10
+====================================================================================================
+Namespace(num_exp=10, root='./dataset', dataset='wisconsin', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=2, embed_dim=512, heads=4, gnn_dropout=0.0, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=False, use_amp=False, amp_dtype='bf16', use_checkpoint=False)
+Auto feat_dim: 1703
+0 4
+[PE-select] using all 900/1151 non-self PE edges
+Epoch 1000, ACC: 0.7843137383460999
+[PE-select] using all 900/1151 non-self PE edges
+Epoch 1000, ACC: 0.8823529481887817
+[PE-select] using all 900/1151 non-self PE edges
+Epoch 1000, ACC: 0.7843137383460999
+[PE-select] using all 900/1151 non-self PE edges
+Epoch 1000, ACC: 0.7058823704719543
+[PE-select] using all 900/1151 non-self PE edges
+Epoch 1000, ACC: 0.7647058963775635
+[PE-select] using all 900/1151 non-self PE edges
+Epoch 1000, ACC: 0.7843137383460999
+[PE-select] using all 900/1151 non-self PE edges
+Epoch 1000, ACC: 0.8235294222831726
+[PE-select] using all 900/1151 non-self PE edges
+Epoch 1000, ACC: 0.8235294222831726
+[PE-select] using all 900/1151 non-self PE edges
+Epoch 1000, ACC: 0.8235294222831726
+[PE-select] using all 900/1151 non-self PE edges
+Epoch 1000, ACC: 0.8039215803146362
+[0.7843137383460999, 0.8823529481887817, 0.7843137383460999, 0.7058823704719543, 0.7647058963775635, 0.7843137383460999, 0.8235294222831726, 0.8235294222831726, 0.8235294222831726, 0.8039215803146362]
+final result: 0.79804±0.043888
+
+====================================================================================================
+[8/11] Running Cora (cora) | fixed_best | num_exp=10
+====================================================================================================
+Namespace(num_exp=10, root='./dataset', dataset='cora', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=2, embed_dim=512, heads=4, gnn_dropout=0.0, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=False, use_amp=False, amp_dtype='bf16', use_checkpoint=False)
+Auto feat_dim: 1433
+0 6
+[PE-select] using all 10556/13264 non-self PE edges
+Epoch 1000, ACC: 0.7870000600814819
+[PE-select] using all 10556/13264 non-self PE edges
+Epoch 1000, ACC: 0.784000039100647
+[PE-select] using all 10556/13264 non-self PE edges
+Epoch 1000, ACC: 0.7910000085830688
+[PE-select] using all 10556/13264 non-self PE edges
+Epoch 1000, ACC: 0.7930000424385071
+[PE-select] using all 10556/13264 non-self PE edges
+Epoch 1000, ACC: 0.8010000586509705
+[PE-select] using all 10556/13264 non-self PE edges
+Epoch 1000, ACC: 0.7930000424385071
+[PE-select] using all 10556/13264 non-self PE edges
+Epoch 1000, ACC: 0.8040000200271606
+[PE-select] using all 10556/13264 non-self PE edges
+Epoch 1000, ACC: 0.7990000247955322
+[PE-select] using all 10556/13264 non-self PE edges
+Epoch 1000, ACC: 0.7760000228881836
+[PE-select] using all 10556/13264 non-self PE edges
+Epoch 1000, ACC: 0.7870000600814819
+[0.7870000600814819, 0.784000039100647, 0.7910000085830688, 0.7930000424385071, 0.8010000586509705, 0.7930000424385071, 0.8040000200271606, 0.7990000247955322, 0.7760000228881836, 0.7870000600814819]
+final result: 0.79150±0.0080281
+
+====================================================================================================
+[9/11] Running CiteSeer (citeseer) | adaptive_best | num_exp=10
+====================================================================================================
+Namespace(num_exp=10, root='./dataset', dataset='citeseer', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=2, embed_dim=512, heads=4, gnn_dropout=0.0, gnn_edge_dropout=0.0, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=True, use_amp=False, amp_dtype='bf16', use_checkpoint=False)
+Auto feat_dim: 3703
+0 5
+[PE-select] using all 9104/12431 non-self PE edges
+Epoch 1000, ACC: 0.6710000038146973
+[PE-select] using all 9104/12431 non-self PE edges
+Epoch 1000, ACC: 0.6920000314712524
+[PE-select] using all 9104/12431 non-self PE edges
+Epoch 1000, ACC: 0.7070000171661377
+[PE-select] using all 9104/12431 non-self PE edges
+Epoch 1000, ACC: 0.6980000138282776
+[PE-select] using all 9104/12431 non-self PE edges
+Epoch 1000, ACC: 0.706000030040741
+[PE-select] using all 9104/12431 non-self PE edges
+Epoch 1000, ACC: 0.706000030040741
+[PE-select] using all 9104/12431 non-self PE edges
+Epoch 1000, ACC: 0.6890000104904175
+[PE-select] using all 9104/12431 non-self PE edges
+Epoch 1000, ACC: 0.6920000314712524
+[PE-select] using all 9104/12431 non-self PE edges
+Epoch 1000, ACC: 0.7020000219345093
+[PE-select] using all 9104/12431 non-self PE edges
+Epoch 1000, ACC: 0.7020000219345093
+[0.6710000038146973, 0.6920000314712524, 0.7070000171661377, 0.6980000138282776, 0.706000030040741, 0.706000030040741, 0.6890000104904175, 0.6920000314712524, 0.7020000219345093, 0.7020000219345093]
+final result: 0.69650±0.01049
+
+====================================================================================================
+[10/11] Running Penn94 (penn94) | memory_safe_final | num_exp=10
+====================================================================================================
+Namespace(num_exp=10, root='./dataset', dataset='penn94', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=1, embed_dim=64, heads=1, gnn_dropout=0.3, gnn_edge_dropout=0.5, gnn_activation='elu', task_head_activation='gelu', max_freqs=50, pos_activation='gelu', learnable_noise=False, use_amp=True, amp_dtype='bf16', use_checkpoint=True, max_pe_edges=200000, pe_loss_mode='random', pe_weight_mode='none')
+Auto feat_dim: 128
+-1 1
+[PE-random-fix] sampled 200000/2724458 non-self PE edges
+Epoch 1000, ACC: 0.6732611656188965
+[PE-random-fix] sampled 200000/2724458 non-self PE edges
+Epoch 1000, ACC: 0.673776388168335
+[PE-random-fix] sampled 200000/2724458 non-self PE edges
+Epoch 1000, ACC: 0.6856259703636169
+[PE-random-fix] sampled 200000/2724458 non-self PE edges
+Epoch 1000, ACC: 0.6836681962013245
+[PE-random-fix] sampled 200000/2724458 non-self PE edges
+Epoch 1000, ACC: 0.6698608994483948
+[PE-random-fix] sampled 200000/2724458 non-self PE edges
+Epoch 1000, ACC: 0.6914992332458496
+[PE-random-fix] sampled 200000/2724458 non-self PE edges
+Epoch 1000, ACC: 0.6672849059104919
+[PE-random-fix] sampled 200000/2724458 non-self PE edges
+Epoch 1000, ACC: 0.6756311058998108
+[PE-random-fix] sampled 200000/2724458 non-self PE edges
+Epoch 1000, ACC: 0.681710422039032
+[PE-random-fix] sampled 200000/2724458 non-self PE edges
+Epoch 1000, ACC: 0.6797527074813843
+[0.6732611656188965, 0.673776388168335, 0.6856259703636169, 0.6836681962013245, 0.6698608994483948, 0.6914992332458496, 0.6672849059104919, 0.6756311058998108, 0.681710422039032, 0.6797527074813843]
+final result: 0.67821±0.0071825
+
+====================================================================================================
+[11/11] Running arXiv-year Official (arxiv-year-official) | official_final_3L256H2 | num_exp=5
+====================================================================================================
+Namespace(num_exp=5, root='./dataset', dataset='arxiv-year-official', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.5, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.05, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=3, embed_dim=256, heads=2, gnn_dropout=0.3, gnn_edge_dropout=0.5, gnn_activation='elu', task_head_activation='gelu', max_freqs=100, pos_activation='gelu', learnable_noise=False, use_amp=True, amp_dtype='bf16', use_checkpoint=True, max_pe_edges=500000, pe_loss_mode='random', pe_weight_mode='none')
+Auto feat_dim: 128
+0 4
+[PE-random-fix] sampled 500000/2315598 non-self PE edges
+Epoch 1000, ACC: 0.40973615646362305
+[PE-random-fix] sampled 500000/2315598 non-self PE edges
+Epoch 1000, ACC: 0.4091220498085022
+[PE-random-fix] sampled 500000/2315598 non-self PE edges
+Epoch 1000, ACC: 0.41235798597335815
+[PE-random-fix] sampled 500000/2315598 non-self PE edges
+Epoch 1000, ACC: 0.40820086002349854
+[PE-random-fix] sampled 500000/2315598 non-self PE edges
+Epoch 1000, ACC: 0.41063371300697327
+[0.40973615646362305, 0.4091220498085022, 0.41235798597335815, 0.40820086002349854, 0.41063371300697327]
+final result: 0.41001±0.0014169
+
+ALL FINAL RUNS COMPLETED.

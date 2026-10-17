@@ -1,0 +1,7 @@
+Namespace(num_exp=1, root='./dataset', dataset='penn94', device=device(type='cuda', index=0), feat_dim=1, epochs=1000, optim='adam', init_lr=0.001, weight_decay=0.0, use_schedule=True, step_size=50, gamma=0.5, lr_eval=0.01, wd_eval=0.0001, epochs_eval=2000, mask_ratio=0.25, replace_ratio=0.0, masked_atom_loss=1.0, masked_pe_loss=0.01, atom_recon_type='sce', alpha_l=2.0, noise_val=0.01, enc_gnn_layer=1, embed_dim=32, heads=1, gnn_dropout=0.3, gnn_edge_dropout=0.5, gnn_activation='elu', task_head_activation='gelu', max_freqs=20, max_pe_edges=100000, pos_activation='gelu')
+Auto feat_dim: 128
+-1 1
+[PE-loss-fix] sampled 100000/2766012 PE-loss edges
+Epoch 1000, ACC: 0.6611025333404541
+[0.6611025333404541]
+final result: 0.66110±0.0

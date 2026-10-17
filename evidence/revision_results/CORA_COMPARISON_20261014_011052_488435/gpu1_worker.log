@@ -1,0 +1,5 @@
+START: degree
+FINISH: degree, return_code=0
+START: ia
+FINISH: ia, return_code=0
+WORKER COMPLETE

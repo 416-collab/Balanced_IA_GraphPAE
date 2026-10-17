@@ -25,7 +25,7 @@ gnn_edge_dropout: 0.5
 gnn_activation: elu
 task_head_activation: gelu
 max_freqs: 100
-max_pe_edges: 0
+max_pe_edges: 500000
 pos_activation: gelu
 pe_loss_mode: random
 pe_balance_bins: 5
@@ -36,11 +36,3 @@ pe_weight_clip_max: 2.0
 use_amp: true
 amp_dtype: bf16
 use_checkpoint: true
-pe_sampler: full
-pe_budget_ratio: 0.0
-ia_beta_spec: 0.7
-ia_beta_degree: 0.3
-ia_temperature: 1.0
-ia_stochastic: 0
-ia_bins: 10
-ia_max_freqs_for_score: 100
