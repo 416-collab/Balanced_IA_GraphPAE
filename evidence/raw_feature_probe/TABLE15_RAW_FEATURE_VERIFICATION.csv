@@ -1,0 +1,8 @@
+dataset,five_seed_count,recalculated_mean_pct,recalculated_population_sd_pct,manuscript_mean_pct,manuscript_sd_pct,match_2dp,raw_seed_json
+actor,5,36.03947520,0.88598673,36.04,0.89,PASS,revision_results/RAW_FEATURE_PROBE_20261018_120925_326896/raw_probe_seed_results.json
+chameleon,5,47.58771956,2.11256056,47.59,2.11,PASS,revision_results/RAW_FEATURE_PROBE_20261018_120925_326896/raw_probe_seed_results.json
+citeseer,5,58.64000201,0.04898916,58.64,0.05,PASS,revision_results/RAW_FEATURE_PROBE_20261018_120925_326896/raw_probe_seed_results.json
+cora,5,60.28000474,0.03999949,60.28,0.04,PASS,revision_results/RAW_FEATURE_PROBE_20261018_120925_326896/raw_probe_seed_results.json
+squirrel,5,29.47166085,1.28219558,29.47,1.28,PASS,revision_results/RAW_FEATURE_PROBE_20261018_120925_326896/raw_probe_seed_results.json
+arxiv-year-official,5,37.28889585,0.20393820,37.29,0.20,PASS,revision_results/RAW_FEATURE_PROBE_20261018_120925_326896/raw_probe_seed_results.json
+penn94,5,75.02112269,0.17503442,75.02,0.17,ROUNDING_0.01PP,revision_results/RAW_FEATURE_PROBE_20261018_120925_326896/raw_probe_seed_results.json

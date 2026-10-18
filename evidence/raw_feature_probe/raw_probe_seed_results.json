@@ -1,0 +1,247 @@
+[
+  {
+    "dataset": "cora",
+    "seed": 0,
+    "raw_probe_accuracy": 0.6030000448226929,
+    "majority_class_accuracy": 0.1300000101327896,
+    "features": 1433
+  },
+  {
+    "dataset": "cora",
+    "seed": 1,
+    "raw_probe_accuracy": 0.6030000448226929,
+    "majority_class_accuracy": 0.1300000101327896,
+    "features": 1433
+  },
+  {
+    "dataset": "cora",
+    "seed": 2,
+    "raw_probe_accuracy": 0.6030000448226929,
+    "majority_class_accuracy": 0.1300000101327896,
+    "features": 1433
+  },
+  {
+    "dataset": "cora",
+    "seed": 3,
+    "raw_probe_accuracy": 0.6030000448226929,
+    "majority_class_accuracy": 0.1300000101327896,
+    "features": 1433
+  },
+  {
+    "dataset": "cora",
+    "seed": 4,
+    "raw_probe_accuracy": 0.6020000576972961,
+    "majority_class_accuracy": 0.1300000101327896,
+    "features": 1433
+  },
+  {
+    "dataset": "citeseer",
+    "seed": 0,
+    "raw_probe_accuracy": 0.5860000252723694,
+    "majority_class_accuracy": 0.07700000703334808,
+    "features": 3703
+  },
+  {
+    "dataset": "citeseer",
+    "seed": 1,
+    "raw_probe_accuracy": 0.5870000123977661,
+    "majority_class_accuracy": 0.07700000703334808,
+    "features": 3703
+  },
+  {
+    "dataset": "citeseer",
+    "seed": 2,
+    "raw_probe_accuracy": 0.5860000252723694,
+    "majority_class_accuracy": 0.07700000703334808,
+    "features": 3703
+  },
+  {
+    "dataset": "citeseer",
+    "seed": 3,
+    "raw_probe_accuracy": 0.5870000123977661,
+    "majority_class_accuracy": 0.07700000703334808,
+    "features": 3703
+  },
+  {
+    "dataset": "citeseer",
+    "seed": 4,
+    "raw_probe_accuracy": 0.5860000252723694,
+    "majority_class_accuracy": 0.07700000703334808,
+    "features": 3703
+  },
+  {
+    "dataset": "chameleon",
+    "seed": 0,
+    "raw_probe_accuracy": 0.46271929144859314,
+    "majority_class_accuracy": 0.22368420660495758,
+    "features": 2325
+  },
+  {
+    "dataset": "chameleon",
+    "seed": 1,
+    "raw_probe_accuracy": 0.4802631735801697,
+    "majority_class_accuracy": 0.18201754987239838,
+    "features": 2325
+  },
+  {
+    "dataset": "chameleon",
+    "seed": 2,
+    "raw_probe_accuracy": 0.46271929144859314,
+    "majority_class_accuracy": 0.24561403691768646,
+    "features": 2325
+  },
+  {
+    "dataset": "chameleon",
+    "seed": 3,
+    "raw_probe_accuracy": 0.515350878238678,
+    "majority_class_accuracy": 0.2149122804403305,
+    "features": 2325
+  },
+  {
+    "dataset": "chameleon",
+    "seed": 4,
+    "raw_probe_accuracy": 0.4583333432674408,
+    "majority_class_accuracy": 0.1732456088066101,
+    "features": 2325
+  },
+  {
+    "dataset": "squirrel",
+    "seed": 0,
+    "raw_probe_accuracy": 0.31123918294906616,
+    "majority_class_accuracy": 0.19308356940746307,
+    "features": 2089
+  },
+  {
+    "dataset": "squirrel",
+    "seed": 1,
+    "raw_probe_accuracy": 0.2891450524330139,
+    "majority_class_accuracy": 0.1921229511499405,
+    "features": 2089
+  },
+  {
+    "dataset": "squirrel",
+    "seed": 2,
+    "raw_probe_accuracy": 0.2766570448875427,
+    "majority_class_accuracy": 0.19980786740779877,
+    "features": 2089
+  },
+  {
+    "dataset": "squirrel",
+    "seed": 3,
+    "raw_probe_accuracy": 0.2891450524330139,
+    "majority_class_accuracy": 0.2103746384382248,
+    "features": 2089
+  },
+  {
+    "dataset": "squirrel",
+    "seed": 4,
+    "raw_probe_accuracy": 0.30739670991897583,
+    "majority_class_accuracy": 0.20845340192317963,
+    "features": 2089
+  },
+  {
+    "dataset": "actor",
+    "seed": 0,
+    "raw_probe_accuracy": 0.366447389125824,
+    "majority_class_accuracy": 0.2546052634716034,
+    "features": 932
+  },
+  {
+    "dataset": "actor",
+    "seed": 1,
+    "raw_probe_accuracy": 0.35789474844932556,
+    "majority_class_accuracy": 0.24802632629871368,
+    "features": 932
+  },
+  {
+    "dataset": "actor",
+    "seed": 2,
+    "raw_probe_accuracy": 0.37368422746658325,
+    "majority_class_accuracy": 0.26447370648384094,
+    "features": 932
+  },
+  {
+    "dataset": "actor",
+    "seed": 3,
+    "raw_probe_accuracy": 0.35592105984687805,
+    "majority_class_accuracy": 0.2546052634716034,
+    "features": 932
+  },
+  {
+    "dataset": "actor",
+    "seed": 4,
+    "raw_probe_accuracy": 0.3480263352394104,
+    "majority_class_accuracy": 0.23750001192092896,
+    "features": 932
+  },
+  {
+    "dataset": "arxiv-year-official",
+    "seed": 0,
+    "raw_probe_accuracy": 0.36974748969078064,
+    "majority_class_accuracy": 0.3001629710197449,
+    "features": 128
+  },
+  {
+    "dataset": "arxiv-year-official",
+    "seed": 1,
+    "raw_probe_accuracy": 0.3741171956062317,
+    "majority_class_accuracy": 0.3035406470298767,
+    "features": 128
+  },
+  {
+    "dataset": "arxiv-year-official",
+    "seed": 2,
+    "raw_probe_accuracy": 0.37336134910583496,
+    "majority_class_accuracy": 0.30158016085624695,
+    "features": 128
+  },
+  {
+    "dataset": "arxiv-year-official",
+    "seed": 3,
+    "raw_probe_accuracy": 0.37158986926078796,
+    "majority_class_accuracy": 0.3043200969696045,
+    "features": 128
+  },
+  {
+    "dataset": "arxiv-year-official",
+    "seed": 4,
+    "raw_probe_accuracy": 0.37562888860702515,
+    "majority_class_accuracy": 0.3010605275630951,
+    "features": 128
+  },
+  {
+    "dataset": "penn94",
+    "seed": 0,
+    "raw_probe_accuracy": 0.7489953637123108,
+    "majority_class_accuracy": 0.5304481983184814,
+    "features": 4814
+  },
+  {
+    "dataset": "penn94",
+    "seed": 1,
+    "raw_probe_accuracy": 0.7488923072814941,
+    "majority_class_accuracy": 0.5249871015548706,
+    "features": 4814
+  },
+  {
+    "dataset": "penn94",
+    "seed": 2,
+    "raw_probe_accuracy": 0.7534260749816895,
+    "majority_class_accuracy": 0.5273570418357849,
+    "features": 4814
+  },
+  {
+    "dataset": "penn94",
+    "seed": 3,
+    "raw_probe_accuracy": 0.7489953637123108,
+    "majority_class_accuracy": 0.5246779918670654,
+    "features": 4814
+  },
+  {
+    "dataset": "penn94",
+    "seed": 4,
+    "raw_probe_accuracy": 0.75074702501297,
+    "majority_class_accuracy": 0.5283874273300171,
+    "features": 4814
+  }
+]
