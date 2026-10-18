@@ -1,0 +1,21 @@
+dataset,budget_ratio,selector,nodes,candidate_nonself_directed,selected_nonself_directed,active_encoder_with_one_loop_per_node,reconstructed_nonself_directed,unique_reconstructed_pairs,covered_nodes,covered_node_percent,self_loop_percent_of_active,illustrative_masked_source_loss_entries,source
+Cora,0.1,random,2708,10556,1055,3763,2000,1000,1293,47.7474,71.9639,481,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Cora,0.1,ia,2708,10556,1055,3763,1062,531,472,17.4298,71.9639,311,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Cora,0.25,random,2708,10556,2639,5347,4638,2319,2089,77.1418,50.6452,1115,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Cora,0.25,ia,2708,10556,2639,5347,2644,1322,911,33.6411,50.6452,659,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Chameleon,0.1,random,2277,62742,6274,8551,11912,5956,1849,81.2033,26.6285,2809,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Chameleon,0.1,ia,2277,62742,6274,8551,6294,3147,718,31.5327,26.6285,1625,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Chameleon,0.25,random,2277,62742,15685,17962,27470,13735,2149,94.3786,12.6768,6597,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Chameleon,0.25,ia,2277,62742,15685,17962,15704,7852,1124,49.3632,12.6768,4241,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Actor,0.1,random,7600,53318,5331,12931,10118,5059,4253,55.9605,58.7735,2559,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Actor,0.1,ia,7600,53318,5331,12931,5338,2669,827,10.8816,58.7735,1421,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Actor,0.25,random,7600,53318,13329,20929,23368,11684,6028,79.3158,36.3132,5896,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Actor,0.25,ia,7600,53318,13329,20929,13334,6667,1800,23.6842,36.3132,3477,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Squirrel,0.1,random,5201,396706,39670,44871,75472,37736,4450,85.5605,11.591,38302,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Squirrel,0.1,ia,5201,396706,39670,44871,39678,19839,1711,32.8975,11.591,19926,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Squirrel,0.25,random,5201,396706,99176,104377,173570,86785,4993,96.0008,4.9829,88170,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+Squirrel,0.25,ia,5201,396706,99176,104377,99190,49595,2126,40.8768,4.9829,50644,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+CiteSeer,0.1,random,3327,9104,910,4237,1730,865,1223,36.7598,78.5225,412,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+CiteSeer,0.1,ia,3327,9104,910,4237,920,460,271,8.1455,78.5225,209,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+CiteSeer,0.25,random,3327,9104,2276,5603,3968,1984,2143,64.4124,59.3789,949,Original server session transcript: Pasted text(10).txt; fixed audit seed 0
+CiteSeer,0.25,ia,3327,9104,2276,5603,2282,1141,679,20.4088,59.3789,519,Original server session transcript: Pasted text(10).txt; fixed audit seed 0

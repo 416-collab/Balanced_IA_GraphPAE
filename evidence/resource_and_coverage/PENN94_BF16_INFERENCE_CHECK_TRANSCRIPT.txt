@@ -1,0 +1,8 @@
+PENN94 FULL-GRAPH BF16 EMBEDDING CHECK
+4814 features | 3L/1024/4H | all graph edges
+EMBEDDING: PASS
+Shape: (41554, 1024) | dtype: torch.float32
+Seconds: 0.47
+Peak allocated GiB: 17.266
+CHECK ONLY; NO ACCURACY RESULT OR FILE CHANGES
+(graphpae) insuper@insuper-2288H-V6:~/GraphPAE_Project/PRL_Revision_20261014_004139_949694$ python - <<'PY'

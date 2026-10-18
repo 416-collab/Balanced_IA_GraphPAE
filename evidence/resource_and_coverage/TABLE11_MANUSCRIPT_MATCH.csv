@@ -1,0 +1,6 @@
+dataset,nonself_B,self_loop_share_percent,random_pairs,random_nodes_percent,balancedIA_pairs,balancedIA_nodes_percent,match
+Chameleon,6274,26.6,5956,81.2,3147,31.5,PASS
+Squirrel,39670,11.6,37736,85.6,19839,32.9,PASS
+Actor,5331,58.8,5059,56.0,2669,10.9,PASS
+Cora,1055,72.0,1000,47.7,531,17.4,PASS
+CiteSeer,910,78.5,865,36.8,460,8.1,PASS

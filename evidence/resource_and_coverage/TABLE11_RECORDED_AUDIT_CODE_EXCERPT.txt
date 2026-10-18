@@ -1,0 +1,44 @@
+for dataset in ["cora", "chameleon", "actor", "squirrel", "citeseer"]:
+    data = torch.load(
+        f"dataset/{dataset}.pt",
+        map_location="cpu",
+        weights_only=False
+    )
+    edge = data.edge_index.long().to(device)
+    u = data.u[:, :50].float().to(device)
+    n = u.size(0)
+    candidate, _ = remove_self_loops(edge)
+    candidate, _ = add_self_loops(candidate, num_nodes=n)
+    m = int((candidate[0] != candidate[1]).sum())
+
+    cfg = dict(load_config(f"config/{dataset}.yaml"))
+    cfg.update(
+        device=device, max_freqs=50, max_pe_edges=0,
+        pe_keep_self_loops=True,
+        ia_beta_spec=0.7, ia_beta_degree=0.3,
+        ia_bins=10, ia_max_freqs_for_score=50,
+    )
+
+    print("\nDATASET:", dataset, "| nodes:", n, "| candidate edges:", m)
+
+    for ratio in [0.10, 0.25]:
+        for mode in ["random", "ia"]:
+            set_random_seed(0)
+            args = SimpleNamespace(**dict(
+                cfg, pe_sampler=mode, pe_budget_ratio=ratio
+            ))
+            active = select_budgeted_pe_edges(
+                candidate, u, graph_edge_index=edge, args=args
+            )
+            selected, _ = remove_self_loops(active)
+            expected = max(1, int(m * ratio))
+            assert selected.size(1) == expected
+            assert selected.t().unique(dim=0).size(0) == expected
+
+            reconstructed = to_undirected(selected, num_nodes=n)
+            unique_pairs = int(
+                (reconstructed[0] < reconstructed[1]).sum()
+            )
+            covered_nodes = selected.reshape(-1).unique().numel()
+
+PYint("Illustrative masking uses a fixed audit seed, not stored training masks.")

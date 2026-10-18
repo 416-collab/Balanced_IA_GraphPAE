@@ -1,0 +1,54 @@
+ALL SMALL DATASETS: BUDGET / RECONSTRUCTION COVERAGE AUDIT
+
+DATASET: cora | nodes: 2708 | candidate edges: 10556
+[IA-Budget] sampler=random, nonself=1055/10556 (9.99%), self_loops=2708, total_active_edges=3763
+random | budget: 0.1 | selected directed: 1055 | reconstructed directed: 2000 | unique pairs: 1000 | nodes covered: 1293 | illustrative masked-source loss edges: 481
+[IA-Budget] sampler=ia, nonself=1055/10556 (9.99%), self_loops=2708, total_active_edges=3763
+ia | budget: 0.1 | selected directed: 1055 | reconstructed directed: 1062 | unique pairs: 531 | nodes covered: 472 | illustrative masked-source loss edges: 311
+[IA-Budget] sampler=random, nonself=2639/10556 (25.00%), self_loops=2708, total_active_edges=5347
+random | budget: 0.25 | selected directed: 2639 | reconstructed directed: 4638 | unique pairs: 2319 | nodes covered: 2089 | illustrative masked-source loss edges: 1115
+[IA-Budget] sampler=ia, nonself=2639/10556 (25.00%), self_loops=2708, total_active_edges=5347
+ia | budget: 0.25 | selected directed: 2639 | reconstructed directed: 2644 | unique pairs: 1322 | nodes covered: 911 | illustrative masked-source loss edges: 659
+
+DATASET: chameleon | nodes: 2277 | candidate edges: 62742
+[IA-Budget] sampler=random, nonself=6274/62742 (10.00%), self_loops=2277, total_active_edges=8551
+random | budget: 0.1 | selected directed: 6274 | reconstructed directed: 11912 | unique pairs: 5956 | nodes covered: 1849 | illustrative masked-source loss edges: 2809
+[IA-Budget] sampler=ia, nonself=6274/62742 (10.00%), self_loops=2277, total_active_edges=8551
+ia | budget: 0.1 | selected directed: 6274 | reconstructed directed: 6294 | unique pairs: 3147 | nodes covered: 718 | illustrative masked-source loss edges: 1625
+[IA-Budget] sampler=random, nonself=15685/62742 (25.00%), self_loops=2277, total_active_edges=17962
+random | budget: 0.25 | selected directed: 15685 | reconstructed directed: 27470 | unique pairs: 13735 | nodes covered: 2149 | illustrative masked-source loss edges: 6597
+[IA-Budget] sampler=ia, nonself=15685/62742 (25.00%), self_loops=2277, total_active_edges=17962
+ia | budget: 0.25 | selected directed: 15685 | reconstructed directed: 15704 | unique pairs: 7852 | nodes covered: 1124 | illustrative masked-source loss edges: 4241
+
+DATASET: actor | nodes: 7600 | candidate edges: 53318
+[IA-Budget] sampler=random, nonself=5331/53318 (10.00%), self_loops=7600, total_active_edges=12931
+random | budget: 0.1 | selected directed: 5331 | reconstructed directed: 10118 | unique pairs: 5059 | nodes covered: 4253 | illustrative masked-source loss edges: 2559
+[IA-Budget] sampler=ia, nonself=5331/53318 (10.00%), self_loops=7600, total_active_edges=12931
+ia | budget: 0.1 | selected directed: 5331 | reconstructed directed: 5338 | unique pairs: 2669 | nodes covered: 827 | illustrative masked-source loss edges: 1421
+[IA-Budget] sampler=random, nonself=13329/53318 (25.00%), self_loops=7600, total_active_edges=20929
+random | budget: 0.25 | selected directed: 13329 | reconstructed directed: 23368 | unique pairs: 11684 | nodes covered: 6028 | illustrative masked-source loss edges: 5896
+[IA-Budget] sampler=ia, nonself=13329/53318 (25.00%), self_loops=7600, total_active_edges=20929
+ia | budget: 0.25 | selected directed: 13329 | reconstructed directed: 13334 | unique pairs: 6667 | nodes covered: 1800 | illustrative masked-source loss edges: 3477
+
+DATASET: squirrel | nodes: 5201 | candidate edges: 396706
+[IA-Budget] sampler=random, nonself=39670/396706 (10.00%), self_loops=5201, total_active_edges=44871
+random | budget: 0.1 | selected directed: 39670 | reconstructed directed: 75472 | unique pairs: 37736 | nodes covered: 4450 | illustrative masked-source loss edges: 38302
+[IA-Budget] sampler=ia, nonself=39670/396706 (10.00%), self_loops=5201, total_active_edges=44871
+ia | budget: 0.1 | selected directed: 39670 | reconstructed directed: 39678 | unique pairs: 19839 | nodes covered: 1711 | illustrative masked-source loss edges: 19926
+[IA-Budget] sampler=random, nonself=99176/396706 (25.00%), self_loops=5201, total_active_edges=104377
+random | budget: 0.25 | selected directed: 99176 | reconstructed directed: 173570 | unique pairs: 86785 | nodes covered: 4993 | illustrative masked-source loss edges: 88170
+[IA-Budget] sampler=ia, nonself=99176/396706 (25.00%), self_loops=5201, total_active_edges=104377
+ia | budget: 0.25 | selected directed: 99176 | reconstructed directed: 99190 | unique pairs: 49595 | nodes covered: 2126 | illustrative masked-source loss edges: 50644
+
+DATASET: citeseer | nodes: 3327 | candidate edges: 9104
+[IA-Budget] sampler=random, nonself=910/9104 (10.00%), self_loops=3327, total_active_edges=4237
+random | budget: 0.1 | selected directed: 910 | reconstructed directed: 1730 | unique pairs: 865 | nodes covered: 1223 | illustrative masked-source loss edges: 412
+[IA-Budget] sampler=ia, nonself=910/9104 (10.00%), self_loops=3327, total_active_edges=4237
+ia | budget: 0.1 | selected directed: 910 | reconstructed directed: 920 | unique pairs: 460 | nodes covered: 271 | illustrative masked-source loss edges: 209
+[IA-Budget] sampler=random, nonself=2276/9104 (25.00%), self_loops=3327, total_active_edges=5603
+random | budget: 0.25 | selected directed: 2276 | reconstructed directed: 3968 | unique pairs: 1984 | nodes covered: 2143 | illustrative masked-source loss edges: 949
+[IA-Budget] sampler=ia, nonself=2276/9104 (25.00%), self_loops=3327, total_active_edges=5603
+ia | budget: 0.25 | selected directed: 2276 | reconstructed directed: 2282 | unique pairs: 1141 | nodes covered: 679 | illustrative masked-source loss edges: 519
+
+COVERAGE AUDIT COMPLETE; NO TRAINING OR FILE CHANGES
+Illustrative masking uses a fixed audit seed, not stored training masks.
