@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/train_node.py", line 50, in <module>
-    args.device = torch.device("cuda:" + str(args.device)) if torch.cuda.is_available() else torch.device("cpu")
-AttributeError: 'Namespace' object has no attribute 'device'

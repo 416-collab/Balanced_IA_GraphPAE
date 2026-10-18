@@ -17,7 +17,7 @@ masked_pe_loss: 0.001
 atom_recon_type: sce
 alpha_l: 1.0
 noise_val: 0.01
-enc_gnn_layer: 2
+enc_gnn_layer: 3
 embed_dim: 1024
 heads: 4
 gnn_dropout: 0.6
@@ -39,3 +39,6 @@ ia_temperature: 1.0
 ia_stochastic: 0
 ia_max_freqs_for_score: 50
 ia_bins: 10
+pe_keep_self_loops: true
+pe_loss_mode: all
+pe_weight_mode: none

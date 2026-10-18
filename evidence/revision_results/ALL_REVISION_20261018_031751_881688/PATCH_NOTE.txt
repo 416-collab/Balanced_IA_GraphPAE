@@ -1,0 +1,1 @@
+Batch code = root source + 'random_fixed' sampler (same selection seed every epoch). Other samplers are unchanged.

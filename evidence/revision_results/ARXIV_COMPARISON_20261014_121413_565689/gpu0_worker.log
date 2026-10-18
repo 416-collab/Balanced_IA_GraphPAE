@@ -1,5 +1,0 @@
-START: random
-FINISH: random, return_code=0
-START: spectral
-FINISH: spectral, return_code=0
-WORKER COMPLETE

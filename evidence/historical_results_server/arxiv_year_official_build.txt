@@ -1,7 +1,0 @@
-Loading LINKXDataset arxiv-year...
-Traceback (most recent call last):
-  File "/home/insuper/GraphPAE_Project/repo/GraphPAE-8a8cd33/scripts/build_arxiv_year_official.py", line 78, in <module>
-    ds = LINKXDataset(root=str(DATASET_ROOT / "LINKX"), name="arxiv-year")
-  File "/home/insuper/miniconda3/envs/graphpae/lib/python3.10/site-packages/torch_geometric/datasets/linkx_dataset.py", line 87, in __init__
-    assert self.name in self.datasets.keys()
-AssertionError

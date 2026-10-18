@@ -1,0 +1,296 @@
+[
+  {
+    "dataset": "squirrel",
+    "sampler": "bins_random",
+    "budget": 0.1,
+    "tag": "squirrel_bins_random_0.10"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "ia_no_bins",
+    "budget": 0.1,
+    "tag": "squirrel_ia_no_bins_0.10"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "ia_raw_degree",
+    "budget": 0.1,
+    "tag": "squirrel_ia_raw_degree_0.10"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "bins_spectral",
+    "budget": 0.1,
+    "tag": "squirrel_bins_spectral_0.10"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "bins_degree",
+    "budget": 0.1,
+    "tag": "squirrel_bins_degree_0.10"
+  },
+  {
+    "dataset": "cora",
+    "sampler": "bins_random",
+    "budget": 0.1,
+    "tag": "cora_bins_random_0.10"
+  },
+  {
+    "dataset": "cora",
+    "sampler": "ia_no_bins",
+    "budget": 0.1,
+    "tag": "cora_ia_no_bins_0.10"
+  },
+  {
+    "dataset": "cora",
+    "sampler": "ia_raw_degree",
+    "budget": 0.1,
+    "tag": "cora_ia_raw_degree_0.10"
+  },
+  {
+    "dataset": "cora",
+    "sampler": "bins_spectral",
+    "budget": 0.1,
+    "tag": "cora_bins_spectral_0.10"
+  },
+  {
+    "dataset": "cora",
+    "sampler": "bins_degree",
+    "budget": 0.1,
+    "tag": "cora_bins_degree_0.10"
+  },
+  {
+    "dataset": "cora",
+    "sampler": "random",
+    "budget": 0.1,
+    "tag": "cora_random_0.10"
+  },
+  {
+    "dataset": "cora",
+    "sampler": "ia",
+    "budget": 0.1,
+    "tag": "cora_ia_0.10"
+  },
+  {
+    "dataset": "cora",
+    "sampler": "spectral",
+    "budget": 0.1,
+    "tag": "cora_spectral_0.10"
+  },
+  {
+    "dataset": "cora",
+    "sampler": "degree",
+    "budget": 0.1,
+    "tag": "cora_degree_0.10"
+  },
+  {
+    "dataset": "cora",
+    "sampler": "random_fixed",
+    "budget": 0.1,
+    "tag": "cora_random_fixed_0.10"
+  },
+  {
+    "dataset": "cora",
+    "sampler": "random_fixed",
+    "budget": 0.25,
+    "tag": "cora_random_fixed_0.25"
+  },
+  {
+    "dataset": "citeseer",
+    "sampler": "random_fixed",
+    "budget": 0.1,
+    "tag": "citeseer_random_fixed_0.10"
+  },
+  {
+    "dataset": "citeseer",
+    "sampler": "random_fixed",
+    "budget": 0.25,
+    "tag": "citeseer_random_fixed_0.25"
+  },
+  {
+    "dataset": "actor",
+    "sampler": "random_fixed",
+    "budget": 0.1,
+    "tag": "actor_random_fixed_0.10"
+  },
+  {
+    "dataset": "actor",
+    "sampler": "random_fixed",
+    "budget": 0.25,
+    "tag": "actor_random_fixed_0.25"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "random_fixed",
+    "budget": 0.1,
+    "tag": "chameleon_random_fixed_0.10"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "random_fixed",
+    "budget": 0.25,
+    "tag": "chameleon_random_fixed_0.25"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "random_fixed",
+    "budget": 0.1,
+    "tag": "squirrel_random_fixed_0.10"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "random_fixed",
+    "budget": 0.25,
+    "tag": "squirrel_random_fixed_0.25"
+  },
+  {
+    "dataset": "actor",
+    "sampler": "spectral",
+    "budget": 0.1,
+    "tag": "actor_spectral_0.10"
+  },
+  {
+    "dataset": "actor",
+    "sampler": "degree",
+    "budget": 0.1,
+    "tag": "actor_degree_0.10"
+  },
+  {
+    "dataset": "citeseer",
+    "sampler": "spectral",
+    "budget": 0.1,
+    "tag": "citeseer_spectral_0.10"
+  },
+  {
+    "dataset": "citeseer",
+    "sampler": "degree",
+    "budget": 0.1,
+    "tag": "citeseer_degree_0.10"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "spectral",
+    "budget": 0.1,
+    "tag": "squirrel_spectral_0.10"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "degree",
+    "budget": 0.1,
+    "tag": "squirrel_degree_0.10"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "random",
+    "budget": 0.05,
+    "tag": "squirrel_random_0.05"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "ia",
+    "budget": 0.05,
+    "tag": "squirrel_ia_0.05"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "random",
+    "budget": 0.5,
+    "tag": "squirrel_random_0.50"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "ia",
+    "budget": 0.5,
+    "tag": "squirrel_ia_0.50"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "random",
+    "budget": 0.1,
+    "tag": "chameleon_random_0.10"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "spectral",
+    "budget": 0.1,
+    "tag": "chameleon_spectral_0.10"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "degree",
+    "budget": 0.1,
+    "tag": "chameleon_degree_0.10"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "ia",
+    "budget": 0.1,
+    "tag": "chameleon_ia_0.10"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "bins_random",
+    "budget": 0.1,
+    "tag": "chameleon_bins_random_0.10"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "ia_no_bins",
+    "budget": 0.1,
+    "tag": "chameleon_ia_no_bins_0.10"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "ia_raw_degree",
+    "budget": 0.1,
+    "tag": "chameleon_ia_raw_degree_0.10"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "bins_spectral",
+    "budget": 0.1,
+    "tag": "chameleon_bins_spectral_0.10"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "bins_degree",
+    "budget": 0.1,
+    "tag": "chameleon_bins_degree_0.10"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "random",
+    "budget": 0.05,
+    "tag": "chameleon_random_0.05"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "ia",
+    "budget": 0.05,
+    "tag": "chameleon_ia_0.05"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "random",
+    "budget": 0.25,
+    "tag": "chameleon_random_0.25"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "ia",
+    "budget": 0.25,
+    "tag": "chameleon_ia_0.25"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "random",
+    "budget": 0.5,
+    "tag": "chameleon_random_0.50"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "ia",
+    "budget": 0.5,
+    "tag": "chameleon_ia_0.50"
+  }
+]

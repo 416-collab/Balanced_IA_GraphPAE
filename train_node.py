@@ -34,7 +34,7 @@ def train_mae_epoch(graph_auto_encoder, x, edge_index, edge_index_pe, u, PE, opt
     # positional reconstruction, and PE edge attributes.
     rng_devices = [x.device.index] if x.device.type == 'cuda' else []
     with torch.random.fork_rng(devices=rng_devices):
-        selection_seed = int(run_args.seed) * 1000003 + int(run_args.selection_epoch)
+        selection_seed = int(run_args.seed) * 1000003 + (0 if str(getattr(run_args, 'pe_sampler', '')) == 'random_fixed' else int(run_args.selection_epoch))
         torch.manual_seed(selection_seed)
         active_edge_index = select_budgeted_pe_edges(
             edge_index_pe=edge_index_pe,
@@ -102,7 +102,7 @@ parser.add_argument(
     choices=[
         'random', 'spectral', 'degree', 'ia',
         'bins_random', 'ia_no_bins', 'ia_raw_degree',
-        'bins_spectral', 'bins_degree'
+        'bins_spectral', 'bins_degree', 'random_fixed'
     ]
 )
 parser.add_argument('--budget', type=float, default=None)

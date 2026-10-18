@@ -1,0 +1,27 @@
+{
+  "actor": {
+    "reference_run": "/home/insuper/GraphPAE_Project/PRL_Revision_20261014_004139_949694/revision_results/PENDING_SMALL_COMPARISONS_20261014_195541_087810/revision_results/actor_ia_20261014_195933_225506",
+    "yaml_source": "/home/insuper/GraphPAE_Project/PRL_Revision_20261014_004139_949694/revision_results/PENDING_SMALL_COMPARISONS_20261014_195541_087810/config/actor.yaml",
+    "yaml_sha256": "cf640160713b8cf347c5dee638680da5fc1ce9566a06ee76c39da0702955a6c9"
+  },
+  "chameleon": {
+    "reference_run": "/home/insuper/GraphPAE_Project/PRL_Revision_20261014_004139_949694/revision_results/ALL_REVISION_20261018_031751_881688/revision_results/chameleon_ia_20261018_035608_865461",
+    "yaml_source": "/home/insuper/GraphPAE_Project/PRL_Revision_20261014_004139_949694/revision_results/ALL_REVISION_20261018_031751_881688/config/chameleon.yaml",
+    "yaml_sha256": "a1e3d330943e746775637b120b85c016284b0df4ecb2b88f60b02fe4584bd4b5"
+  },
+  "citeseer": {
+    "reference_run": "/home/insuper/GraphPAE_Project/PRL_Revision_20261014_004139_949694/revision_results/PENDING_SMALL_COMPARISONS_20261014_195541_087810/revision_results/citeseer_ia_20261014_201522_380493",
+    "yaml_source": "/home/insuper/GraphPAE_Project/PRL_Revision_20261014_004139_949694/revision_results/PENDING_SMALL_COMPARISONS_20261014_195541_087810/config/citeseer.yaml",
+    "yaml_sha256": "79eb85d7b32cc8c9311084983188fa6169b44811e87b86223451cf0fd5dc306d"
+  },
+  "cora": {
+    "reference_run": "/home/insuper/GraphPAE_Project/PRL_Revision_20261014_004139_949694/revision_results/ALL_REVISION_20261018_031751_881688/revision_results/cora_ia_20261018_043945_894858",
+    "yaml_source": "/home/insuper/GraphPAE_Project/PRL_Revision_20261014_004139_949694/revision_results/ALL_REVISION_20261018_031751_881688/config/cora.yaml",
+    "yaml_sha256": "034032bf0e76ba7d210607e1fdf6f6d5fa9f07a1bdede8a2b7697dc7295bddb4"
+  },
+  "squirrel": {
+    "reference_run": "/home/insuper/GraphPAE_Project/PRL_Revision_20261014_004139_949694/revision_results/PENDING_SMALL_COMPARISONS_20261014_195541_087810/revision_results/squirrel_ia_20261014_200640_851883",
+    "yaml_source": "/home/insuper/GraphPAE_Project/PRL_Revision_20261014_004139_949694/revision_results/PENDING_SMALL_COMPARISONS_20261014_195541_087810/config/squirrel.yaml",
+    "yaml_sha256": "bbf135fe2a726be7cd797756fa842922b7af0e20b27c15d05d925d64095f9fcd"
+  }
+}

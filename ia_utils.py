@@ -226,3 +226,25 @@ def select_budgeted_pe_edges(edge_index_pe, u, graph_edge_index=None, args=None,
         )
 
     return selected
+
+
+
+# --- PRL revision: fixed-random control ------------------------------------
+# 'random_fixed' calls the ordinary random selector. train_node.py gives it the
+# same selection seed at every epoch, so one random subset is drawn per run and
+# kept for all pretraining epochs. All other samplers are unchanged.
+_prl_select_original = select_budgeted_pe_edges
+
+
+def select_budgeted_pe_edges(edge_index_pe, u, graph_edge_index=None,
+                             args=None, device=None):
+    if args is not None and str(getattr(args, "pe_sampler", "")) == "random_fixed":
+        import copy
+        local_args = copy.copy(args)
+        local_args.pe_sampler = "random"
+        return _prl_select_original(edge_index_pe, u,
+                                    graph_edge_index=graph_edge_index,
+                                    args=local_args, device=device)
+    return _prl_select_original(edge_index_pe, u,
+                                graph_edge_index=graph_edge_index,
+                                args=args, device=device)

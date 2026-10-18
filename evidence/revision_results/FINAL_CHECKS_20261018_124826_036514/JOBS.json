@@ -1,0 +1,50 @@
+[
+  {
+    "dataset": "chameleon",
+    "sampler": "random_fixed",
+    "budget": 0.05,
+    "tag": "chameleon_random_fixed_0.05"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "random_fixed",
+    "budget": 0.05,
+    "tag": "squirrel_random_fixed_0.05"
+  },
+  {
+    "dataset": "chameleon",
+    "sampler": "random_fixed",
+    "budget": 0.5,
+    "tag": "chameleon_random_fixed_0.50"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "random_fixed",
+    "budget": 0.5,
+    "tag": "squirrel_random_fixed_0.50"
+  },
+  {
+    "dataset": "actor",
+    "sampler": "random",
+    "budget": 1.0,
+    "tag": "actor_random_1.00"
+  },
+  {
+    "dataset": "citeseer",
+    "sampler": "random",
+    "budget": 1.0,
+    "tag": "citeseer_random_1.00"
+  },
+  {
+    "dataset": "squirrel",
+    "sampler": "random",
+    "budget": 1.0,
+    "tag": "squirrel_random_1.00"
+  },
+  {
+    "dataset": "cora",
+    "sampler": "random",
+    "budget": 1.0,
+    "tag": "cora_random_1.00"
+  }
+]
